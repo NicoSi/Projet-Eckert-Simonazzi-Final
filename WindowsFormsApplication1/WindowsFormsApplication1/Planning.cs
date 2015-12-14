@@ -22,6 +22,12 @@ public class Planning
         listeDeJours = tempListeDeJour;
         dateDebut = tempDateDebut;
     }
+
+    public Planning(string tempNomPlanning, DateTime tempDateDebut)
+    {
+        nomPlanning = tempNomPlanning;
+        dateDebut = tempDateDebut;
+    }
     //Accesseurs//
     public List<Jour> GetListeJour
     {
