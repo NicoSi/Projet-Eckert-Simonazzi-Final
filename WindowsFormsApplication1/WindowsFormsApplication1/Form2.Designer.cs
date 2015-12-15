@@ -54,6 +54,7 @@
             this.richTextBoxCompteRendu = new System.Windows.Forms.RichTextBox();
             this.labelCompteRendu = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonEnregistrerCompteRendu = new System.Windows.Forms.Button();
             this.panelInteractionActivité.SuspendLayout();
             this.panelListeActivité.SuspendLayout();
             this.panelCompteRendu.SuspendLayout();
@@ -295,6 +296,7 @@
             // 
             // panelCompteRendu
             // 
+            this.panelCompteRendu.Controls.Add(this.buttonEnregistrerCompteRendu);
             this.panelCompteRendu.Controls.Add(this.richTextBoxCompteRendu);
             this.panelCompteRendu.Controls.Add(this.labelCompteRendu);
             this.panelCompteRendu.Location = new System.Drawing.Point(32, 90);
@@ -307,7 +309,7 @@
             this.richTextBoxCompteRendu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxCompteRendu.Location = new System.Drawing.Point(27, 38);
             this.richTextBoxCompteRendu.Name = "richTextBoxCompteRendu";
-            this.richTextBoxCompteRendu.Size = new System.Drawing.Size(220, 335);
+            this.richTextBoxCompteRendu.Size = new System.Drawing.Size(220, 305);
             this.richTextBoxCompteRendu.TabIndex = 11;
             this.richTextBoxCompteRendu.Text = "";
             // 
@@ -331,6 +333,16 @@
             this.button1.Text = "Revenir au planning";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonEnregistrerCompteRendu
+            // 
+            this.buttonEnregistrerCompteRendu.Location = new System.Drawing.Point(27, 365);
+            this.buttonEnregistrerCompteRendu.Name = "buttonEnregistrerCompteRendu";
+            this.buttonEnregistrerCompteRendu.Size = new System.Drawing.Size(220, 23);
+            this.buttonEnregistrerCompteRendu.TabIndex = 12;
+            this.buttonEnregistrerCompteRendu.Text = "Enregistrer compte rendu";
+            this.buttonEnregistrerCompteRendu.UseVisualStyleBackColor = true;
+            this.buttonEnregistrerCompteRendu.Click += new System.EventHandler(this.buttonEnregistrerCompteRendu_Click);
             // 
             // Form2
             // 
@@ -387,5 +399,6 @@
         private System.Windows.Forms.Label labelCompteRendu;
         private System.Windows.Forms.RichTextBox richTextBoxCompteRendu;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonEnregistrerCompteRendu;
     }
 }

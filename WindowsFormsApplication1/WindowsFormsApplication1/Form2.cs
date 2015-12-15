@@ -85,13 +85,13 @@ namespace WindowsFormsApplication1
 
             listBox1.SelectedIndex = 0;
 
-            /*if (jourSelection < planning.getJourActuel())
+            if (jourSelection < planning.getJourActuel())
             {
                 boutonEffacerActivite.Enabled = false;
                 buttonAjouterActivité.Enabled = false;
                 buttonModifierActivité.Enabled = false;
                 buttonSupprimerActivité.Enabled = false;
-            }*/
+            }
 
                 
         }
@@ -186,8 +186,17 @@ namespace WindowsFormsApplication1
 
         private void boutonEffacerActivite_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            objetJourSelection.getlisteActivite.Clear();
+            DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir supprimer les activités ?", "Suppression activités", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                listBox1.Items.Clear();
+                objetJourSelection.getlisteActivite.Clear();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+            
         }
 
         private void buttonAjouterActivité_Click(object sender, EventArgs e)
@@ -214,16 +223,21 @@ namespace WindowsFormsApplication1
 
         private void buttonSupprimerActivité_Click(object sender, EventArgs e)
         {
-            activiteSelectionne = listBox1.SelectedIndex;
-            objetJourSelection.supprimerActivite(activiteSelectionne);
 
-            listBox1.Items.Clear();
+            DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir supprimer l' activité ?", "Suppression de l'activité", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                activiteSelectionne = listBox1.SelectedIndex;
+                objetJourSelection.supprimerActivite(activiteSelectionne);
 
-            remplissageListBox();
+                listBox1.Items.Clear();
 
-            MessageBox.Show("L'activité a bien été supprimé", "Info", MessageBoxButtons.OK);
+                remplissageListBox();
 
-            activiteSelectionne = 1;
+                MessageBox.Show("L'activité a bien été supprimé", "Info", MessageBoxButtons.OK);
+
+                activiteSelectionne = 1;
+            }
          
         }
 
@@ -238,6 +252,13 @@ namespace WindowsFormsApplication1
         {
             this.Close();
 
+        }
+
+        private void buttonEnregistrerCompteRendu_Click(object sender, EventArgs e)
+        {
+            objetJourSelection.GetcompteRendu = richTextBoxCompteRendu.Text;
+
+            MessageBox.Show("Le compte rendu a bien été enregistré", "Info", MessageBoxButtons.OK);
         } 
 
     }

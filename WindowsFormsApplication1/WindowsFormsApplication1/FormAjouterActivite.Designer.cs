@@ -197,6 +197,7 @@
             // 
             // comboBoxHeureDebut
             // 
+            this.comboBoxHeureDebut.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxHeureDebut.FormattingEnabled = true;
             this.comboBoxHeureDebut.Location = new System.Drawing.Point(159, 293);
             this.comboBoxHeureDebut.Name = "comboBoxHeureDebut";
@@ -206,6 +207,7 @@
             // 
             // comboBoxMinuteDebut
             // 
+            this.comboBoxMinuteDebut.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMinuteDebut.FormattingEnabled = true;
             this.comboBoxMinuteDebut.Location = new System.Drawing.Point(257, 293);
             this.comboBoxMinuteDebut.Name = "comboBoxMinuteDebut";
@@ -247,6 +249,7 @@
             // 
             // comboBoxListeLieu
             // 
+            this.comboBoxListeLieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxListeLieu.FormattingEnabled = true;
             this.comboBoxListeLieu.Location = new System.Drawing.Point(94, 378);
             this.comboBoxListeLieu.Name = "comboBoxListeLieu";
@@ -304,6 +307,7 @@
             // 
             // comboBoxHeureFin
             // 
+            this.comboBoxHeureFin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxHeureFin.FormattingEnabled = true;
             this.comboBoxHeureFin.Location = new System.Drawing.Point(127, 332);
             this.comboBoxHeureFin.Name = "comboBoxHeureFin";
@@ -322,6 +326,7 @@
             // 
             // comboBoxMinuteFin
             // 
+            this.comboBoxMinuteFin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMinuteFin.FormattingEnabled = true;
             this.comboBoxMinuteFin.Location = new System.Drawing.Point(220, 331);
             this.comboBoxMinuteFin.Name = "comboBoxMinuteFin";
