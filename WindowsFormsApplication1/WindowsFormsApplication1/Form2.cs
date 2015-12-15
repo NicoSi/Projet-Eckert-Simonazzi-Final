@@ -206,7 +206,7 @@ namespace WindowsFormsApplication1
 
         private void buttonModifierActivité_Click(object sender, EventArgs e)
         {
-
+            
             formModifierActivite formModifier = new formModifierActivite(objetJourSelection, listeAstronautes, listeActivitéTableau[activiteSelectionne],listeLieu,listeJour,planning);
             formModifier.ShowDialog();
 
