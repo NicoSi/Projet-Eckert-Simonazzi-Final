@@ -277,6 +277,7 @@ namespace WindowsFormsApplication1
 
             }
 
+
             //Creation d'un lieu
             string nomLieu = "";
             int coordonneX = 0;
@@ -330,6 +331,7 @@ namespace WindowsFormsApplication1
                     listeLieux.Add(lieuActivite);
                 }
 
+
             }
 
             List<Astronautes> listeAstronautesSelection = new List<Astronautes>();
@@ -346,33 +348,25 @@ namespace WindowsFormsApplication1
 
             string texteDescriptif = richTextBoxDescriptif.Text;
 
-            if (erreur == false && erreurSupplementaire == false)
-            {
-                Activités nouvelleActivite = new Activités(nomActivite, typeActivite, horaireDebutActivite, horaireFinActivite, lieuActivite, listeAstronautesSelection, texteDescriptif);
-                objetJour.ajouterActivite(nouvelleActivite);
-                this.Dispose();
 
-            }
-            else if (erreurSupplementaire == true)
+            if (erreur == true)
             {
                 MessageBox.Show(messageErreur, "Message Erreur", MessageBoxButtons.OK);
             }
-            else if (erreurSupplementaire == false && erreur==false)
+            else if (erreurSupplementaire == true)
+            {
+                MessageBox.Show(messageErreurSupplementaire, "Message Erreur", MessageBoxButtons.OK);
+            }
+            else if (erreur == false && erreurSupplementaire == false)
             {
                 objetJour.getlisteActivite.Remove(activiteAModifier);
-
                 Activités nouvelleActivite = new Activités(nomActivite, typeActivite, horaireDebutActivite, horaireFinActivite, lieuActivite, listeAstronautesSelection, texteDescriptif);
-
                 objetJour.ajouterActivite(nouvelleActivite);
-
                 this.Dispose();
 
                 Form2 f = new Form2(listeJour, objetJour.GetidJour, planning, listeAstronautesSelection, listeLieux);
-
                 f.ShowDialog();
             }
-
-          
 
         }
 
