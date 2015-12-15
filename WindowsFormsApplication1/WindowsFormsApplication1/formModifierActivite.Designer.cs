@@ -102,7 +102,7 @@
             // comboBoxListeLieu
             // 
             this.comboBoxListeLieu.FormattingEnabled = true;
-            this.comboBoxListeLieu.Location = new System.Drawing.Point(773, 385);
+            this.comboBoxListeLieu.Location = new System.Drawing.Point(120, 344);
             this.comboBoxListeLieu.Name = "comboBoxListeLieu";
             this.comboBoxListeLieu.Size = new System.Drawing.Size(121, 21);
             this.comboBoxListeLieu.TabIndex = 60;
@@ -122,7 +122,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(179, 279);
+            this.label1.Location = new System.Drawing.Point(179, 253);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 57;
@@ -131,7 +131,7 @@
             // comboBoxMinuteDebut
             // 
             this.comboBoxMinuteDebut.FormattingEnabled = true;
-            this.comboBoxMinuteDebut.Location = new System.Drawing.Point(209, 276);
+            this.comboBoxMinuteDebut.Location = new System.Drawing.Point(209, 248);
             this.comboBoxMinuteDebut.Name = "comboBoxMinuteDebut";
             this.comboBoxMinuteDebut.Size = new System.Drawing.Size(72, 21);
             this.comboBoxMinuteDebut.TabIndex = 56;
@@ -139,7 +139,7 @@
             // comboBoxHeureDebut
             // 
             this.comboBoxHeureDebut.FormattingEnabled = true;
-            this.comboBoxHeureDebut.Location = new System.Drawing.Point(98, 276);
+            this.comboBoxHeureDebut.Location = new System.Drawing.Point(98, 248);
             this.comboBoxHeureDebut.Name = "comboBoxHeureDebut";
             this.comboBoxHeureDebut.Size = new System.Drawing.Size(71, 21);
             this.comboBoxHeureDebut.TabIndex = 55;
@@ -230,7 +230,7 @@
             // 
             this.labelLieuActivite.AutoSize = true;
             this.labelLieuActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLieuActivite.Location = new System.Drawing.Point(639, 386);
+            this.labelLieuActivite.Location = new System.Drawing.Point(12, 342);
             this.labelLieuActivite.Name = "labelLieuActivite";
             this.labelLieuActivite.Size = new System.Drawing.Size(51, 20);
             this.labelLieuActivite.TabIndex = 44;
@@ -240,7 +240,7 @@
             // 
             this.labelPlageHoraireActivité.AutoSize = true;
             this.labelPlageHoraireActivité.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlageHoraireActivité.Location = new System.Drawing.Point(14, 274);
+            this.labelPlageHoraireActivité.Location = new System.Drawing.Point(13, 248);
             this.labelPlageHoraireActivité.Name = "labelPlageHoraireActivité";
             this.labelPlageHoraireActivité.Size = new System.Drawing.Size(64, 20);
             this.labelPlageHoraireActivité.TabIndex = 43;
@@ -290,7 +290,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 342);
+            this.label3.Location = new System.Drawing.Point(13, 292);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 66;
@@ -299,7 +299,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(179, 344);
+            this.label4.Location = new System.Drawing.Point(179, 294);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(15, 13);
             this.label4.TabIndex = 69;
@@ -308,7 +308,7 @@
             // comboBoxMinutesFin
             // 
             this.comboBoxMinutesFin.FormattingEnabled = true;
-            this.comboBoxMinutesFin.Location = new System.Drawing.Point(209, 341);
+            this.comboBoxMinutesFin.Location = new System.Drawing.Point(209, 291);
             this.comboBoxMinutesFin.Name = "comboBoxMinutesFin";
             this.comboBoxMinutesFin.Size = new System.Drawing.Size(72, 21);
             this.comboBoxMinutesFin.TabIndex = 68;
@@ -316,7 +316,7 @@
             // comboBoxHeureFin
             // 
             this.comboBoxHeureFin.FormattingEnabled = true;
-            this.comboBoxHeureFin.Location = new System.Drawing.Point(98, 341);
+            this.comboBoxHeureFin.Location = new System.Drawing.Point(98, 291);
             this.comboBoxHeureFin.Name = "comboBoxHeureFin";
             this.comboBoxHeureFin.Size = new System.Drawing.Size(71, 21);
             this.comboBoxHeureFin.TabIndex = 67;
@@ -350,6 +350,7 @@
             this.buttonAjouterParCarte.TabIndex = 72;
             this.buttonAjouterParCarte.Text = "Ajouter par carte";
             this.buttonAjouterParCarte.UseVisualStyleBackColor = true;
+            this.buttonAjouterParCarte.Visible = false;
             this.buttonAjouterParCarte.Click += new System.EventHandler(this.buttonAjouterParCarte_Click);
             // 
             // formModifierActivite
