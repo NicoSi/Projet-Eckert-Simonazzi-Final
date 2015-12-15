@@ -353,24 +353,63 @@ namespace WindowsFormsApplication1
                 this.Dispose();
 
             }
-            else if (erreur == true)
+            else if (erreurSupplementaire == true)
             {
                 MessageBox.Show(messageErreur, "Message Erreur", MessageBoxButtons.OK);
             }
-            else if (erreurSupplementaire == true)
+            else if (erreurSupplementaire == false && erreur==false)
             {
-                MessageBox.Show(messageErreurSupplementaire, "Message Erreur", MessageBoxButtons.OK);
+                objetJour.getlisteActivite.Remove(activiteAModifier);
+
+                Activités nouvelleActivite = new Activités(nomActivite, typeActivite, horaireDebutActivite, horaireFinActivite, lieuActivite, listeAstronautesSelection, texteDescriptif);
+
+                objetJour.ajouterActivite(nouvelleActivite);
+
+                this.Dispose();
+
+                Form2 f = new Form2(listeJour, objetJour.GetidJour, planning, listeAstronautesSelection, listeLieux);
+
+                f.ShowDialog();
             }
 
-            Form2 f = new Form2(listeJour, objetJour.GetidJour, planning, listeAstronautesSelection, listeLieux);
-            f.ShowDialog();
-
+          
 
         }
 
         private void boutonAnnuler_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void checkBoxLieu_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxCoordonnéesX.Visible = ((CheckBox)sender).Checked;
+            textBoxCoordonnéesY.Visible = ((CheckBox)sender).Checked;
+            textBoxNomLieu.Visible = ((CheckBox)sender).Checked;
+            labelNomLieu.Visible = ((CheckBox)sender).Checked;
+            labelLieuCoordonneeX.Visible = ((CheckBox)sender).Checked;
+            labelLieuCoordonneeY.Visible = ((CheckBox)sender).Checked;
+            comboBoxListeLieu.Visible = !((CheckBox)sender).Checked;
+            labelLieuActivite.Visible = !((CheckBox)sender).Checked;
+            buttonAjouterParCarte.Visible = ((CheckBox)sender).Checked;
+        }
+
+        private void buttonAjouterParCarte_Click(object sender, EventArgs e)
+        {
+            nouveauLieuCarte form = new nouveauLieuCarte();
+
+            if (form.ShowDialog(this) == DialogResult.OK && form.getNomLieu != "" && form.getPositionX.ToString() != "" && form.getPositionY.ToString() != "")
+            {
+
+                textBoxNomLieu.Text = form.getNomLieu;
+                textBoxCoordonnéesX.Text = form.getPositionX.ToString();
+                textBoxCoordonnéesY.Text = form.getPositionY.ToString();
+
+            }
+            else if (form.ShowDialog(this) == DialogResult.OK || form.getNomLieu == "" || form.getPositionX.ToString() == "" || form.getPositionY.ToString() == "")
+            {
+                buttonAjouterParCarte_Click(sender, e);
+            }
         }
 
       
