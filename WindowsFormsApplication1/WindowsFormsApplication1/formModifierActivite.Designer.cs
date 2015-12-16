@@ -61,10 +61,7 @@
             this.buttonAjouterParCarte = new System.Windows.Forms.Button();
             this.textBoxType = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-<<<<<<< HEAD
             this.treeViewTypeActivite = new System.Windows.Forms.TreeView();
-=======
->>>>>>> origin/master
             this.SuspendLayout();
             // 
             // textBoxCoordonnéesY
@@ -151,9 +148,6 @@
             this.comboBoxHeureDebut.Name = "comboBoxHeureDebut";
             this.comboBoxHeureDebut.Size = new System.Drawing.Size(71, 21);
             this.comboBoxHeureDebut.TabIndex = 55;
-<<<<<<< HEAD
-=======
-            this.comboBoxHeureDebut.SelectedIndexChanged += new System.EventHandler(this.comboBoxHeureDebut_SelectedIndexChanged);
             // 
             // treeViewTypeActivite
             // 
@@ -162,7 +156,6 @@
             this.treeViewTypeActivite.Size = new System.Drawing.Size(271, 106);
             this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
             this.toolTip1.SetToolTip(this.treeViewTypeActivite, "Renseignez le type de l\'activité");
->>>>>>> origin/master
             // 
             // boutonEnregistrerActivite
             // 
@@ -469,10 +462,7 @@
         private System.Windows.Forms.Button buttonAjouterParCarte;
         private System.Windows.Forms.TextBox textBoxType;
         private System.Windows.Forms.ToolTip toolTip1;
-<<<<<<< HEAD
         private System.Windows.Forms.TreeView treeViewTypeActivite;
-=======
 
->>>>>>> origin/master
     }
 }

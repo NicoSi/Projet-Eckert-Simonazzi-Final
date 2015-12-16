@@ -26,13 +26,9 @@ public class Jour
     {
 
     }
-<<<<<<< HEAD
- 
 
-=======
 
     //Construteur de Jour
->>>>>>> origin/master
     public Jour(List<Activités> tempListeActivite, string tempCompteRendu)
     {
         nbJour++;

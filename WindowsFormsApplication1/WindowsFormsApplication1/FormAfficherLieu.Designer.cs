@@ -86,7 +86,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox1, "Cliquer sur un lieu pour avoir ses informations");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
             // labelCoordonneeY
@@ -117,7 +116,6 @@
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(98, 33);
             this.buttonOk.TabIndex = 9;
-            this.buttonOk.Text = "Retour";
             this.buttonOk.Text = "OK";
             this.toolTip1.SetToolTip(this.buttonOk, "Cliquer pour revenir à la fenêtre précédente");
             this.buttonOk.UseVisualStyleBackColor = true;

@@ -510,12 +510,6 @@ namespace WindowsFormsApplication1
 
         }
 
-        
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         //Bouton précedent
         private void Precedent_Click(object sender, EventArgs e)
         {
@@ -1147,11 +1141,9 @@ namespace WindowsFormsApplication1
 
         }
 
-<<<<<<< HEAD
 
-=======
         //Quitte le formulaire et l'application et enregistre le formulaire
->>>>>>> origin/master
+
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir quitter l'application ?", "Info", MessageBoxButtons.YesNo);
@@ -1160,25 +1152,22 @@ namespace WindowsFormsApplication1
                 enregistrerProjet();
                 this.Close();
             }
-<<<<<<< HEAD
+
      
         }
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
             
-=======
->>>>>>> origin/master
+
         }
      
 
-<<<<<<< HEAD
         private void button1_Click_3(object sender, EventArgs e)
         {
 
         }
 
-=======
->>>>>>> origin/master
+
     }
 }
 

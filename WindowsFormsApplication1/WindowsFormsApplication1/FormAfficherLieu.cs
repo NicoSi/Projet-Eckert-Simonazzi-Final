@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
     public partial class FormAfficherLieu : Form
     {
 
+        //Attributs
         private List<Lieu> listeLieux;
         private List<Jour> listeJours;
         private List<Jour> listeJoursPeriode;
@@ -23,6 +24,8 @@ namespace WindowsFormsApplication1
         PictureBox pBExploSpaceSuitPast, pBExploVehiclePast, pBExploExperiencePast, pBExploSpaceSuitFuture, pBExploVehicleFuture, pBExploExperienceFuture;
         private int jourDebut, jourFin;
         int positionX, positionY;
+
+        //Constructeur
         public FormAfficherLieu(List<Lieu> tempListeLieux, List<Jour> templisteJours, Planning tempPlanning)
         {
             InitializeComponent();
@@ -37,6 +40,7 @@ namespace WindowsFormsApplication1
 
         }
 
+        //Affiche les icônes des explorations contenus dans les jours
         public void afficherLieu()
         {
             listeJoursPeriode.Clear();
@@ -225,7 +229,7 @@ namespace WindowsFormsApplication1
 
         }
 
-
+        //Charge les images et les contrôles sur le form
         private void FormAfficherLieu_Load(object sender, EventArgs e)
         {
 
@@ -248,11 +252,8 @@ namespace WindowsFormsApplication1
             pictureBox4.Image = iconeExperience;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
-        }
-
+        // Affiche les coordonnees à la position selectionnee
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
 
@@ -263,6 +264,7 @@ namespace WindowsFormsApplication1
         }
 
 
+        //Au clique d'une icone recupere les infos de l'exploration et les affiches sur le côte
         private void icone_Click(object sender, EventArgs e)
         {
             int index = int.Parse(((PictureBox)sender).Tag.ToString());
@@ -272,7 +274,7 @@ namespace WindowsFormsApplication1
             labelJourActivite.Text = "Numero du jour : " + listeJourParExploration[index].ToString();
         }
 
-
+        //Filtre les donnees sur les explorations sur une periode
         private void buttonPeriode_Click(object sender, EventArgs e)
         {
 
@@ -297,6 +299,7 @@ namespace WindowsFormsApplication1
 
         }
 
+        //Ferme la form
         private void buttonOk_Click(object sender, EventArgs e)
         {
             this.Dispose();
