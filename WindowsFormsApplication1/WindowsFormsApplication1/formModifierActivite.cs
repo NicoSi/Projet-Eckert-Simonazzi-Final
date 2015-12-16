@@ -19,9 +19,14 @@ namespace WindowsFormsApplication1
         private List<Jour> listeJour;
         private Planning planning;
 
+<<<<<<< HEAD
         //Constructeur
         public FormModifierActivite(Jour objetJourSelection, List<Astronautes> tempListeAstronautes, Activités tempActiviteAModifier, List<Lieu> tempListeDeLieux,List<Jour> tempListeJours ,Planning P)
 
+=======
+
+        public FormModifierActivite(Jour objetJourSelection, List<Astronautes> tempListeAstronautes, Activités tempActiviteAModifier, List<Lieu> tempListeDeLieux,List<Jour> tempListeJours ,Planning P)
+>>>>>>> origin/master
         {
             
             InitializeComponent();
@@ -198,6 +203,7 @@ namespace WindowsFormsApplication1
 
         }
 
+<<<<<<< HEAD
 
         // Recréer une activité avec les champs renseignés et renvoie des messages d'erreurs si tous les champs ne sont pas spécifiés par l'utilisateur
         private void checkedListBoxAstronautes_SelectedIndexChanged(object sender, EventArgs e)
@@ -209,6 +215,9 @@ namespace WindowsFormsApplication1
         {
 
         }
+=======
+    
+>>>>>>> origin/master
 
         //Methode pour recuperer les informations du form et mettre à jour le l'activite selectionne
         private void boutonEnregistrerActivite_Click_1(object sender, EventArgs e)
@@ -400,12 +409,17 @@ namespace WindowsFormsApplication1
         private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
         {
             textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
+<<<<<<< HEAD
 
         }//
+=======
+        }
+        }
+>>>>>>> origin/master
 
         
     
 
       
     }
-}
+

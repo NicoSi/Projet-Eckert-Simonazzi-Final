@@ -12,7 +12,7 @@ using System.Xml;
 
 public class Activités
 {
-
+    //Attributs
     private int idActivité;
     private int horaireDebut; //Debut de l'activité en nombre de minute de 0 * 1480
     private string texteDescriptif;
@@ -22,7 +22,6 @@ public class Activités
     private Lieu lieuActivite;
     private static int nbActivité = 0;
     private string nomActivité;
-
     private List<Astronautes> listeAstronautes = new List<Astronautes>();
     //Constructeur par défaut
     public Activités(string nom, string type, int hDebut, int hFin, Lieu tempLieuActivite, List<Astronautes> tempListeAstronautes, string tempTexteDescriptif)
@@ -198,9 +197,7 @@ public class Activités
     {
         get{return this.lieuActivite.GetnomLieu;}
         
-    }
-
-        
+    }   
     //FinAccesseurs
 
 

@@ -62,6 +62,10 @@
             this.textBoxType = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.treeViewTypeActivite = new System.Windows.Forms.TreeView();
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
             this.SuspendLayout();
             // 
             // textBoxCoordonnéesY
@@ -148,6 +152,10 @@
             this.comboBoxHeureDebut.Name = "comboBoxHeureDebut";
             this.comboBoxHeureDebut.Size = new System.Drawing.Size(71, 21);
             this.comboBoxHeureDebut.TabIndex = 55;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
             // 
             // treeViewTypeActivite
             // 
@@ -156,9 +164,13 @@
             this.treeViewTypeActivite.Size = new System.Drawing.Size(271, 106);
             this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
             this.toolTip1.SetToolTip(this.treeViewTypeActivite, "Renseignez le type de l\'activité");
+<<<<<<< HEAD
             // 
+=======
+            
+>>>>>>> origin/master
             // boutonEnregistrerActivite
-            // 
+            
             this.boutonEnregistrerActivite.Location = new System.Drawing.Point(685, 442);
             this.boutonEnregistrerActivite.Name = "boutonEnregistrerActivite";
             this.boutonEnregistrerActivite.Size = new System.Drawing.Size(126, 38);
