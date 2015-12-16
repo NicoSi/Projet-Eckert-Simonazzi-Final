@@ -1270,6 +1270,18 @@ namespace WindowsFormsApplication1
             form.Show();
 
         }
+
+     
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

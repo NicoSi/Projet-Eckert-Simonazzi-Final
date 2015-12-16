@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nouveauLieuCarte));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxCoordonneeX = new System.Windows.Forms.TextBox();
@@ -39,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.buttonEnregistrer = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +54,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(781, 520);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Cliquer à l\'endroit où vous souhaiter ajouter un lieu");
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
@@ -126,6 +129,7 @@
             this.buttonEnregistrer.Size = new System.Drawing.Size(75, 23);
             this.buttonEnregistrer.TabIndex = 8;
             this.buttonEnregistrer.Text = "Enregistrer";
+            this.toolTip1.SetToolTip(this.buttonEnregistrer, "Cliquer pour enregistrer le lieu");
             this.buttonEnregistrer.UseVisualStyleBackColor = true;
             this.buttonEnregistrer.Click += new System.EventHandler(this.buttonEnregistrer_Click);
             // 
@@ -137,6 +141,7 @@
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
             this.button2.Text = "Annuler";
+            this.toolTip1.SetToolTip(this.button2, "Cliquer pour annuler");
             this.button2.UseVisualStyleBackColor = true;
             // 
             // nouveauLieuCarte
@@ -155,6 +160,7 @@
             this.Controls.Add(this.textBoxCoordonneeX);
             this.Name = "nouveauLieuCarte";
             this.Text = "nouveauLieuCarte";
+            this.toolTip1.SetToolTip(this, "Formulaire d\'ajout de lieu");
             this.Load += new System.EventHandler(this.nouveauLieuCarte_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nouveauLieuCarte_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -176,5 +182,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonEnregistrer;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAfficherLieu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -42,11 +43,11 @@
             this.labelDebut = new System.Windows.Forms.Label();
             this.labelPeriode = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelLabelActivite = new System.Windows.Forms.Label();
-            this.labelNomActivite = new System.Windows.Forms.Label();
-            this.labelDescription = new System.Windows.Forms.Label();
-            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.labelJourActivite = new System.Windows.Forms.Label();
+            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
+            this.labelDescription = new System.Windows.Forms.Label();
+            this.labelNomActivite = new System.Windows.Forms.Label();
+            this.labelLabelActivite = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -56,6 +57,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -83,6 +85,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(757, 520);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Cliquer sur un lieu pour avoir ses informations");
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
@@ -114,6 +117,7 @@
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
             this.buttonOk.TabIndex = 9;
             this.buttonOk.Text = "OK";
+            this.toolTip1.SetToolTip(this.buttonOk, "Cliquer pour revenir à la fenêtre précédente");
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
@@ -201,25 +205,23 @@
             this.panel3.Size = new System.Drawing.Size(269, 236);
             this.panel3.TabIndex = 13;
             // 
-            // labelLabelActivite
+            // labelJourActivite
             // 
-            this.labelLabelActivite.AutoSize = true;
-            this.labelLabelActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLabelActivite.Location = new System.Drawing.Point(3, 12);
-            this.labelLabelActivite.Name = "labelLabelActivite";
-            this.labelLabelActivite.Size = new System.Drawing.Size(147, 18);
-            this.labelLabelActivite.TabIndex = 0;
-            this.labelLabelActivite.Text = "Informations activité :";
+            this.labelJourActivite.AutoSize = true;
+            this.labelJourActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJourActivite.Location = new System.Drawing.Point(3, 83);
+            this.labelJourActivite.Name = "labelJourActivite";
+            this.labelJourActivite.Size = new System.Drawing.Size(46, 18);
+            this.labelJourActivite.TabIndex = 4;
+            this.labelJourActivite.Text = "Jour :";
             // 
-            // labelNomActivite
+            // richTextBoxDescription
             // 
-            this.labelNomActivite.AutoSize = true;
-            this.labelNomActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomActivite.Location = new System.Drawing.Point(3, 42);
-            this.labelNomActivite.Name = "labelNomActivite";
-            this.labelNomActivite.Size = new System.Drawing.Size(124, 18);
-            this.labelNomActivite.TabIndex = 1;
-            this.labelNomActivite.Text = "Nom de l\'activité :";
+            this.richTextBoxDescription.Location = new System.Drawing.Point(6, 143);
+            this.richTextBoxDescription.Name = "richTextBoxDescription";
+            this.richTextBoxDescription.Size = new System.Drawing.Size(251, 90);
+            this.richTextBoxDescription.TabIndex = 3;
+            this.richTextBoxDescription.Text = "";
             // 
             // labelDescription
             // 
@@ -231,23 +233,25 @@
             this.labelDescription.TabIndex = 2;
             this.labelDescription.Text = "Description de l\'activité :";
             // 
-            // richTextBoxDescription
+            // labelNomActivite
             // 
-            this.richTextBoxDescription.Location = new System.Drawing.Point(6, 143);
-            this.richTextBoxDescription.Name = "richTextBoxDescription";
-            this.richTextBoxDescription.Size = new System.Drawing.Size(251, 90);
-            this.richTextBoxDescription.TabIndex = 3;
-            this.richTextBoxDescription.Text = "";
+            this.labelNomActivite.AutoSize = true;
+            this.labelNomActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomActivite.Location = new System.Drawing.Point(3, 42);
+            this.labelNomActivite.Name = "labelNomActivite";
+            this.labelNomActivite.Size = new System.Drawing.Size(124, 18);
+            this.labelNomActivite.TabIndex = 1;
+            this.labelNomActivite.Text = "Nom de l\'activité :";
             // 
-            // labelJourActivite
+            // labelLabelActivite
             // 
-            this.labelJourActivite.AutoSize = true;
-            this.labelJourActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJourActivite.Location = new System.Drawing.Point(3, 83);
-            this.labelJourActivite.Name = "labelJourActivite";
-            this.labelJourActivite.Size = new System.Drawing.Size(46, 18);
-            this.labelJourActivite.TabIndex = 4;
-            this.labelJourActivite.Text = "Jour :";
+            this.labelLabelActivite.AutoSize = true;
+            this.labelLabelActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLabelActivite.Location = new System.Drawing.Point(3, 12);
+            this.labelLabelActivite.Name = "labelLabelActivite";
+            this.labelLabelActivite.Size = new System.Drawing.Size(147, 18);
+            this.labelLabelActivite.TabIndex = 0;
+            this.labelLabelActivite.Text = "Informations activité :";
             // 
             // pictureBox2
             // 
@@ -394,5 +398,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

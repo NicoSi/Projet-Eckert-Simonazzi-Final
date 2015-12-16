@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.boutonJour14 = new System.Windows.Forms.Button();
             this.boutonJour13 = new System.Windows.Forms.Button();
@@ -70,6 +71,7 @@
             this.buttonAfficherCarte = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -359,6 +361,7 @@
             this.suivant.Size = new System.Drawing.Size(75, 31);
             this.suivant.TabIndex = 1;
             this.suivant.Text = "Suivant";
+            this.toolTip2.SetToolTip(this.suivant, "Cliquer pour accéder au jour suivant");
             this.suivant.UseVisualStyleBackColor = true;
             this.suivant.Click += new System.EventHandler(this.suivant_Click);
             // 
@@ -370,6 +373,7 @@
             this.Precedent.Size = new System.Drawing.Size(85, 31);
             this.Precedent.TabIndex = 2;
             this.Precedent.Text = "Précédent";
+            this.toolTip2.SetToolTip(this.Precedent, "Cliquer pour revenir au jour précédent");
             this.Precedent.UseVisualStyleBackColor = true;
             this.Precedent.Click += new System.EventHandler(this.Precedent_Click);
             // 
@@ -381,6 +385,7 @@
             this.affichage14Jours.Size = new System.Drawing.Size(79, 27);
             this.affichage14Jours.TabIndex = 3;
             this.affichage14Jours.Text = "14 Jours";
+            this.toolTip2.SetToolTip(this.affichage14Jours, "Affiche le planning par tranches de 14 jours");
             this.affichage14Jours.UseVisualStyleBackColor = true;
             this.affichage14Jours.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -392,6 +397,7 @@
             this.affichage21Jours.Size = new System.Drawing.Size(90, 27);
             this.affichage21Jours.TabIndex = 4;
             this.affichage21Jours.Text = "21 Jours";
+            this.toolTip2.SetToolTip(this.affichage21Jours, "Affiche le planning par tranches de 21 jours");
             this.affichage21Jours.UseVisualStyleBackColor = true;
             this.affichage21Jours.Click += new System.EventHandler(this.button1_Click_2);
             // 
@@ -403,6 +409,7 @@
             this.affichage7Jours.Size = new System.Drawing.Size(81, 28);
             this.affichage7Jours.TabIndex = 5;
             this.affichage7Jours.Text = "7 Jours";
+            this.toolTip2.SetToolTip(this.affichage7Jours, "Affiche le planning par tranches de 7 jours");
             this.affichage7Jours.UseVisualStyleBackColor = true;
             this.affichage7Jours.Click += new System.EventHandler(this.affichage7Jours_Click);
             // 
@@ -413,6 +420,8 @@
             this.textBoxRecherche.Name = "textBoxRecherche";
             this.textBoxRecherche.Size = new System.Drawing.Size(170, 24);
             this.textBoxRecherche.TabIndex = 7;
+            this.toolTip2.SetToolTip(this.textBoxRecherche, "Renvoie le nombre de jours dont le terme renseigné est dans le compte rendu d\'une" +
+        " activité");
             // 
             // buttonRecherche
             // 
@@ -531,6 +540,7 @@
             this.buttonAfficherCarte.Size = new System.Drawing.Size(164, 25);
             this.buttonAfficherCarte.TabIndex = 30;
             this.buttonAfficherCarte.Text = "Afficher la carte";
+            this.toolTip2.SetToolTip(this.buttonAfficherCarte, "Permet de visualiser la carte des lieux");
             this.buttonAfficherCarte.UseVisualStyleBackColor = true;
             this.buttonAfficherCarte.Click += new System.EventHandler(this.buttonAfficherCarte_Click);
             // 
@@ -577,6 +587,7 @@
             this.Controls.Add(this.suivant);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+            this.toolTip2.SetToolTip(this, "Cliquer sur un jour pour afficher ses activités");
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
@@ -633,6 +644,7 @@
         private System.Windows.Forms.Button buttonAfficherCarte;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolTip toolTip2;
 
 
     }
