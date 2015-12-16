@@ -9,12 +9,15 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class nouveauLieuCarte : Form
+    public partial class FormNouveauLieuCarte : Form
     {
 
+        //Attributs
         private int positionX, positionY;
         private string nomLieu;
-        public nouveauLieuCarte()
+
+        //Constructeur de FormNouveauLieuCarte
+        public FormNouveauLieuCarte()
         {
             InitializeComponent();
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -37,22 +40,7 @@ namespace WindowsFormsApplication1
             get { return positionY; }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void nouveauLieuCarte_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nouveauLieuCarte_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
+        //Recuperation de l'emplacement en pixel sur la carte et remplissage des textBox de coordonnee
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             positionX = e.X - 700;
@@ -62,6 +50,7 @@ namespace WindowsFormsApplication1
             
         }
 
+        //Fermeture du form et envoi des donnees à form ajouter ou modifier activite
         private void buttonEnregistrer_Click(object sender, EventArgs e)
         {
             bool erreur = false;

@@ -193,7 +193,6 @@
             this.texteDescriptifActivite.Size = new System.Drawing.Size(278, 124);
             this.texteDescriptifActivite.TabIndex = 0;
             this.texteDescriptifActivite.Text = "";
-            this.texteDescriptifActivite.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // buttonModifierActivité
             // 
@@ -281,7 +280,6 @@
             this.label1.Size = new System.Drawing.Size(100, 31);
             this.label1.TabIndex = 3;
             this.label1.Text = "Jour n°";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // boutonJourSuivant
             // 
@@ -353,7 +351,6 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 31);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Retour";
             this.button1.Text = "Revenir au planning";
             this.toolTip1.SetToolTip(this.button1, "Cliquer pour revenir à l\'accueil");
             this.button1.UseVisualStyleBackColor = true;

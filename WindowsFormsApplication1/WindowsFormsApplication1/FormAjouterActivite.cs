@@ -16,7 +16,6 @@ namespace WindowsFormsApplication1
         private List<Lieu> listeLieu;
         private Jour jourActuel;
         private Planning planning;
-        private int positionX, positionY;
 
         //Constructeur de FormAjouterActivite
         public FormAjouterActivite(Jour tempJourActuel, List<Astronautes> tempListeAstronautes, List<Lieu> tempListeLieu, Planning tempPlanning)
@@ -324,7 +323,7 @@ namespace WindowsFormsApplication1
 
 
 
-
+        //Protection du comboBoxMinuteDebut dans les cas specifique (24h par exemple)
         private void comboBoxHeureDebut_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Si jamais on selectionne l'horaire 24h40, on enleve le 50 dans la liste des minutes
@@ -355,6 +354,7 @@ namespace WindowsFormsApplication1
 
         }
 
+        //Protection du comboBoxMinuteFin dans les cas specifique (24h par exemple)
         private void comboBoxHeureFin_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Si jamais on selectionne l'horaire 24h40, on enleve le 50 dans la liste des minutes
@@ -383,9 +383,10 @@ namespace WindowsFormsApplication1
             }
         }
 
+        //Ouvre un autre form pour ajouter un lieu par la carte
         private void buttonAjouterParCarte_Click(object sender, EventArgs e)
         {
-            nouveauLieuCarte form = new nouveauLieuCarte();
+            FormNouveauLieuCarte form = new FormNouveauLieuCarte();
 
             if (form.ShowDialog(this) == DialogResult.OK && form.getNomLieu != "" && form.getPositionX.ToString() != "" && form.getPositionY.ToString() != "")
             {

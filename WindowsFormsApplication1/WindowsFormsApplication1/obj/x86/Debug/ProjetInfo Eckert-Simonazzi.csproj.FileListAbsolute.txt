@@ -145,3 +145,4 @@ D:\Nicolas\Mes documents\ENSC\Prog\Projet-Eckert-Simonazzi-Final\WindowsFormsApp
 \\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.nouveauLieuCarte.resources
 \\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 \\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\ProjetInfo Eckert-Simonazzi.csproj.GenerateResource.Cache
+D:\Nicolas\Mes documents\ENSC\Prog\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.FormNouveauLieuCarte.resources

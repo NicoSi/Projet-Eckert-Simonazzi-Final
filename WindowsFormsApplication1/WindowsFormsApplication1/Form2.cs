@@ -11,6 +11,8 @@ namespace WindowsFormsApplication1
 {
     public partial class Form2 : Form
     {
+
+        //Attributs
         private List<Jour> listeJour;
         private int jourSelection;
         private Jour objetJourSelection;
@@ -21,9 +23,7 @@ namespace WindowsFormsApplication1
         private List<Lieu> listeLieu;
 
 
-
-        //Constructeur par défaut
-
+        //Constructeur du form 2
         public Form2(List<Jour> tempListeJour, int tempJourSelection, Planning tempPlanning, List<Astronautes> tempListeAstronautes, List<Lieu> tempListeLieu)
 
         {
@@ -51,6 +51,7 @@ namespace WindowsFormsApplication1
             }
         }
 
+        //Remplissage des elements du jour
         private void Form2_Load(object sender, EventArgs e)
         {
             
@@ -79,16 +80,7 @@ namespace WindowsFormsApplication1
                 
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         //Méthode qui affiche les caractéristiques d'une activité selectionnée
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -132,6 +124,7 @@ namespace WindowsFormsApplication1
             
         }
 
+        //Ferme l'instance de la form actuelle et ouvre la form du prochain jour
         private void boutonJourSuivant_Click(object sender, EventArgs e)
         {
             if (jourSelection != 500)
@@ -144,11 +137,11 @@ namespace WindowsFormsApplication1
             }
         }
 
+        //Ferme l'instance de la form actuelle et ouvre la form du jour precedent
         private void boutonJourPrecedent_Click(object sender, EventArgs e)
         {
             if(jourSelection != 1)
             {
-
 
                 Form2 fenetre = new Form2(listeJour, jourSelection - 1, planning, listeAstronautes, listeLieu);
 
@@ -158,6 +151,7 @@ namespace WindowsFormsApplication1
 
         }
 
+        //Supprime toutes les activites de la liste d'activite du jour en cours
         private void boutonEffacerActivite_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir supprimer les activités ?", "Suppression activités", MessageBoxButtons.YesNo);
@@ -173,6 +167,7 @@ namespace WindowsFormsApplication1
             
         }
 
+        // Ouvre formAjouterActivite
         private void buttonAjouterActivité_Click(object sender, EventArgs e)
         {
 
@@ -187,10 +182,11 @@ namespace WindowsFormsApplication1
 
         }
 
+        //Ouvre formModifierActivite
         private void buttonModifierActivité_Click(object sender, EventArgs e)
         {
             
-            formModifierActivite formModifier = new formModifierActivite(objetJourSelection, listeAstronautes, listeActivitéTableau[activiteSelectionne],listeLieu,listeJour,planning);
+            FormModifierActivite formModifier = new FormModifierActivite(objetJourSelection, listeAstronautes, listeActivitéTableau[activiteSelectionne],listeLieu,listeJour,planning);
             formModifier.ShowDialog();
 
         }
@@ -215,6 +211,7 @@ namespace WindowsFormsApplication1
          
         }
 
+        //Ouvre formAfficherLieu
         private void buttonAfficherLieuActivité_Click(object sender, EventArgs e)
         {
             FormAfficherLieu form = new FormAfficherLieu(listeLieu, listeJour, planning);
@@ -222,12 +219,14 @@ namespace WindowsFormsApplication1
 
         }
 
+        //Ferme la fenetre actuelle pour retourner au planning
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
 
         }
 
+        //Enregistre le compte rendu
         private void buttonEnregistrerCompteRendu_Click(object sender, EventArgs e)
         {
             objetJourSelection.GetcompteRendu = richTextBoxCompteRendu.Text;

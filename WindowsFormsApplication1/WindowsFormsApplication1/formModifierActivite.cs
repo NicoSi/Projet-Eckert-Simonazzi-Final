@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class formModifierActivite : Form
+    public partial class FormModifierActivite : Form
     {
         private Jour objetJour;
         private List<Astronautes> listeAstronautes;
@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         private Planning planning;
 
 
-        public formModifierActivite(Jour objetJourSelection, List<Astronautes> tempListeAstronautes, Activités tempActiviteAModifier, List<Lieu> tempListeDeLieux,List<Jour> tempListeJours ,Planning P)
+        public FormModifierActivite(Jour objetJourSelection, List<Astronautes> tempListeAstronautes, Activités tempActiviteAModifier, List<Lieu> tempListeDeLieux,List<Jour> tempListeJours ,Planning P)
         {
             
             InitializeComponent();
@@ -386,7 +386,7 @@ namespace WindowsFormsApplication1
 
         private void buttonAjouterParCarte_Click(object sender, EventArgs e)
         {
-            nouveauLieuCarte form = new nouveauLieuCarte();
+            FormNouveauLieuCarte form = new FormNouveauLieuCarte();
 
             if (form.ShowDialog(this) == DialogResult.OK && form.getNomLieu != "" && form.getPositionX.ToString() != "" && form.getPositionY.ToString() != "")
             {
@@ -401,14 +401,11 @@ namespace WindowsFormsApplication1
                 buttonAjouterParCarte_Click(sender, e);
             }
         }
-<<<<<<< HEAD
-=======
 
         private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
         {
             textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
-        }//
->>>>>>> origin/master
+        }
 
       
 

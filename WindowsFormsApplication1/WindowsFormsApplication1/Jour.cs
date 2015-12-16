@@ -12,16 +12,22 @@ using System.Text;
 
 public class Jour
 {
+
+    //Attributs
     private int idJour;
     private static int nbJour = 0;
     private string etatActivite;
-    private Planning PlanningJour;
     private string compteRendu;
     private List<Activités> listeActivite = new List<Activités>(); 
 
 
     //Constructeur par défaut
- 
+    public Jour()
+    {
+
+    }
+
+    //Construteur de Jour
     public Jour(List<Activités> tempListeActivite, string tempCompteRendu)
     {
         nbJour++;
@@ -75,6 +81,7 @@ public class Jour
         }
     }
 	
+    //Ajoute une activite a la liste d'activite de l'instance de jour et trie la liste
 	public void ajouterActivite(Activités nouvelleActivité)
 	{
         listeActivite.Add(nouvelleActivité);

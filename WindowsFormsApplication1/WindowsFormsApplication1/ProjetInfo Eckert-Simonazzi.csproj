@@ -75,19 +75,19 @@
     <Compile Include="FormAjouterActivite.Designer.cs">
       <DependentUpon>FormAjouterActivite.cs</DependentUpon>
     </Compile>
-    <Compile Include="formModifierActivite.cs">
+    <Compile Include="FormModifierActivite.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formModifierActivite.Designer.cs">
-      <DependentUpon>formModifierActivite.cs</DependentUpon>
+    <Compile Include="FormModifierActivite.Designer.cs">
+      <DependentUpon>FormModifierActivite.cs</DependentUpon>
     </Compile>
     <Compile Include="Jour.cs" />
     <Compile Include="Lieu.cs" />
-    <Compile Include="nouveauLieuCarte.cs">
+    <Compile Include="FormNouveauLieuCarte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="nouveauLieuCarte.Designer.cs">
-      <DependentUpon>nouveauLieuCarte.cs</DependentUpon>
+    <Compile Include="FormNouveauLieuCarte.Designer.cs">
+      <DependentUpon>FormNouveauLieuCarte.cs</DependentUpon>
     </Compile>
     <Compile Include="Planning.cs" />
     <Compile Include="Program.cs" />
@@ -104,11 +104,11 @@
     <EmbeddedResource Include="FormAjouterActivite.resx">
       <DependentUpon>FormAjouterActivite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formModifierActivite.resx">
-      <DependentUpon>formModifierActivite.cs</DependentUpon>
+    <EmbeddedResource Include="FormModifierActivite.resx">
+      <DependentUpon>FormModifierActivite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nouveauLieuCarte.resx">
-      <DependentUpon>nouveauLieuCarte.cs</DependentUpon>
+    <EmbeddedResource Include="FormNouveauLieuCarte.resx">
+      <DependentUpon>FormNouveauLieuCarte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

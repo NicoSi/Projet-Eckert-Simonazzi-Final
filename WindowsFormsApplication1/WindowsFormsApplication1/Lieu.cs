@@ -11,12 +11,16 @@ using System.Text;
 
 public class Lieu
 {
+
+    //Attributs 
     private string nomLieu;
     private double coordonneX, coordonneY;
     private int idLieu;
     private static int nbLieu;
     private List<Activités> listeActivites = new List<Activités>();
-    //Constructeur par défaut
+
+
+    //Constructeur de Lieu
     public Lieu(string tempNomLieu, double tempCoordonneX, double tempCoordonneY)
     {
         nomLieu = tempNomLieu;
@@ -53,6 +57,7 @@ public class Lieu
         return ch;
     }
 
+ 
     public override bool Equals(object obj)
     {
         Lieu l = obj as Lieu;

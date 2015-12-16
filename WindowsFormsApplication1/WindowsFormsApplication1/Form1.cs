@@ -906,6 +906,7 @@ namespace WindowsFormsApplication1
 
             affichageNiveau2(int.Parse(boutonJour21.Text));
         }
+
         public void enregistrerProjet() // Permet d'enregistrer tous les attributs de toutes les classes de tout le projet
         {
             XmlDocument xmlDoc = new XmlDocument();
@@ -1041,16 +1042,9 @@ namespace WindowsFormsApplication1
             xmlDoc.Save("FichierXMLPrincipal.xml");
         }
 
-      
+   
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
-    
-
-      
+        //Cette methode charge le fichier XML et remplis les variables du form1
         public bool ChargerFichierXMLPrincipal() //Permet de recréer toutes les instances appartenant au form 1
         {
             XmlDocument xmldoc = new XmlDocument();
@@ -1137,7 +1131,7 @@ namespace WindowsFormsApplication1
         }
 
   
-
+        //Ferme l'application et enregistre le XML
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
 
@@ -1145,11 +1139,7 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //Permet d'acceder à la carte
         private void buttonAfficherCarte_Click(object sender, EventArgs e)
         {
             FormAfficherLieu form = new FormAfficherLieu(listeDeLieux, listeJourForm1, planning);
@@ -1157,14 +1147,7 @@ namespace WindowsFormsApplication1
 
         }
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-   
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
+        //Quitte le formulaire et l'application et enregistre le formulaire
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir quitter l'application ?", "Info", MessageBoxButtons.YesNo);
@@ -1176,17 +1159,6 @@ namespace WindowsFormsApplication1
         }
      
 
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-            
-        }
-
-        private void button1_Click_3(object sender, EventArgs e)
-        {
-
-
-        }
->>>>>>> origin/master
     }
 }
 

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class formModifierActivite
+    partial class FormModifierActivite
     {
         /// <summary>
         /// Required designer variable.
