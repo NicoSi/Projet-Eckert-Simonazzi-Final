@@ -79,7 +79,6 @@
             this.labelAstronautesActivite.Size = new System.Drawing.Size(181, 20);
             this.labelAstronautesActivite.TabIndex = 17;
             this.labelAstronautesActivite.Text = "Liste des astronautes :";
-            this.labelAstronautesActivite.Click += new System.EventHandler(this.labelAstronautesActivite_Click);
             // 
             // labelDescriptifActivite
             // 
@@ -90,7 +89,6 @@
             this.labelDescriptifActivite.Size = new System.Drawing.Size(181, 20);
             this.labelDescriptifActivite.TabIndex = 16;
             this.labelDescriptifActivite.Text = "Descriptif de l\'activité :";
-            this.labelDescriptifActivite.Click += new System.EventHandler(this.labelDescriptifActivite_Click);
             // 
             // labelLieuActivite
             // 
@@ -101,7 +99,6 @@
             this.labelLieuActivite.Size = new System.Drawing.Size(51, 20);
             this.labelLieuActivite.TabIndex = 15;
             this.labelLieuActivite.Text = "Lieu :";
-            this.labelLieuActivite.Click += new System.EventHandler(this.labelLieuActivite_Click);
             // 
             // labelPlageHoraireActivité
             // 
@@ -112,7 +109,6 @@
             this.labelPlageHoraireActivité.Size = new System.Drawing.Size(130, 20);
             this.labelPlageHoraireActivité.TabIndex = 14;
             this.labelPlageHoraireActivité.Text = "Horaires debut :";
-            this.labelPlageHoraireActivité.Click += new System.EventHandler(this.labelPlageHoraireActivité_Click);
             // 
             // labelJourActivité
             // 
@@ -123,7 +119,6 @@
             this.labelJourActivité.Size = new System.Drawing.Size(82, 31);
             this.labelJourActivité.TabIndex = 13;
             this.labelJourActivité.Text = "Jour :";
-            this.labelJourActivité.Click += new System.EventHandler(this.labelJourActivité_Click);
             // 
             // labelTypeActivité
             // 
@@ -152,7 +147,6 @@
             this.checkedListBoxAstronautes.Name = "checkedListBoxAstronautes";
             this.checkedListBoxAstronautes.Size = new System.Drawing.Size(327, 154);
             this.checkedListBoxAstronautes.TabIndex = 19;
-            this.checkedListBoxAstronautes.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // textBoxNomActivite
             // 
@@ -176,7 +170,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(327, 160);
             this.richTextBox1.TabIndex = 25;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // boutonEnregistrerActivite
             // 
@@ -214,7 +207,6 @@
             this.comboBoxMinuteDebut.Name = "comboBoxMinuteDebut";
             this.comboBoxMinuteDebut.Size = new System.Drawing.Size(72, 21);
             this.comboBoxMinuteDebut.TabIndex = 30;
-            this.comboBoxMinuteDebut.SelectedIndexChanged += new System.EventHandler(this.comboBoxMinuteDebut_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -224,7 +216,6 @@
             this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 31;
             this.label1.Text = "H";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // checkBoxNouveauLieu
             // 
@@ -256,7 +247,6 @@
             this.comboBoxListeLieu.Name = "comboBoxListeLieu";
             this.comboBoxListeLieu.Size = new System.Drawing.Size(198, 21);
             this.comboBoxListeLieu.TabIndex = 35;
-            this.comboBoxListeLieu.SelectedIndexChanged += new System.EventHandler(this.comboBoxListeLieu_SelectedIndexChanged);
             // 
             // labelLieuCoordonneeX
             // 

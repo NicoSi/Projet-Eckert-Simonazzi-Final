@@ -60,11 +60,8 @@
             this.checkBoxLieu = new System.Windows.Forms.CheckBox();
             this.boutonAnnuler = new System.Windows.Forms.Button();
             this.buttonAjouterParCarte = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.textBoxType = new System.Windows.Forms.TextBox();
-=======
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
->>>>>>> origin/master
             this.SuspendLayout();
             // 
             // textBoxCoordonnéesY
@@ -159,12 +156,8 @@
             this.treeViewTypeActivite.Location = new System.Drawing.Point(101, 106);
             this.treeViewTypeActivite.Name = "treeViewTypeActivite";
             this.treeViewTypeActivite.Size = new System.Drawing.Size(271, 106);
-            this.treeViewTypeActivite.TabIndex = 54;
-<<<<<<< HEAD
             this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
-=======
             this.toolTip1.SetToolTip(this.treeViewTypeActivite, "Renseignez le type de l\'activité");
->>>>>>> origin/master
             // 
             // boutonEnregistrerActivite
             // 
@@ -463,10 +456,8 @@
         private System.Windows.Forms.CheckBox checkBoxLieu;
         private System.Windows.Forms.Button boutonAnnuler;
         private System.Windows.Forms.Button buttonAjouterParCarte;
-<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBoxType;
-=======
         private System.Windows.Forms.ToolTip toolTip1;
->>>>>>> origin/master
+
     }
 }

@@ -222,6 +222,7 @@ namespace WindowsFormsApplication1
 
         }
 
+        //Methode pour recuperer les informations du form et mettre à jour le l'activite selectionne
         private void boutonEnregistrerActivite_Click_1(object sender, EventArgs e)
         {
             string messageErreur = "Veuillez remplir les champs suivants :";
