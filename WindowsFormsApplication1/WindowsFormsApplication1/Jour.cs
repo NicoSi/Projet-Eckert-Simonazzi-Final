@@ -21,10 +21,7 @@ public class Jour
 
 
     //Constructeur par défaut
-    public Jour ()
-    {
-
-    }
+ 
     public Jour(List<Activités> tempListeActivite, string tempCompteRendu)
     {
         nbJour++;
@@ -32,12 +29,7 @@ public class Jour
         idJour = nbJour;
         compteRendu = tempCompteRendu;
     }
-    public Jour(List<Activités> tempListeActivite)
-    {
-        nbJour++;
-        listeActivite = tempListeActivite;
-        idJour = nbJour;
-    }
+
 
   
     //Accesseurs//
@@ -54,12 +46,7 @@ public class Jour
         set{listeActivite=value ;}
     }
 
-	public  Planning GetPlanningJour
-	{
-        get { return PlanningJour; }
-        set { PlanningJour = value; }
 
-	}
 
     public int GetidJour
     {
@@ -73,11 +60,7 @@ public class Jour
         set { compteRendu = value; }
     }
 
-    public int GetnbJour
-    {
-        get { return nbJour; }
-        set { nbJour = value; }
-    }
+   
     //FinAccesseurs//
 
 
@@ -98,40 +81,13 @@ public class Jour
         listeActivite.Sort(new ActiviteComparer());
 	}
 
-	public virtual void modifierActivite()
-	{
-		throw new System.NotImplementedException();
-	}
 
 	public virtual void supprimerActivite(int index)
 	{
         listeActivite.RemoveAt(index);
 	}
 
-	public virtual void modifierCompteRendu()
-	{
-		throw new System.NotImplementedException();
-	}
 
-	public virtual void clearActivite()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void getListeActivite()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void motCleContenuDansCR()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void motCleContenuDansTDActivite()
-	{
-		throw new System.NotImplementedException();
-	}
 
 }
 

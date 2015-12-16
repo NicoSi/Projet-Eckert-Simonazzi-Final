@@ -60,7 +60,6 @@ namespace WindowsFormsApplication1
             textBoxCoordonneeX.Text = positionX.ToString();
             textBoxCoordonneeY.Text = positionY.ToString();
             
-
         }
 
         private void buttonEnregistrer_Click(object sender, EventArgs e)

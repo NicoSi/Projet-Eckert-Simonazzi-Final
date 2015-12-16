@@ -44,11 +44,7 @@ public class Astronautes
         get { return ageAstronautes; }
         set { ageAstronautes = value; }
     }
-    public int GetnbAstronaute
-    {
-        get {return nbAstronautes;}
-        set { nbAstronautes = value; }
-    }
+ 
     public int GetidAstronaute
     {
         get { return idAstronaute; }

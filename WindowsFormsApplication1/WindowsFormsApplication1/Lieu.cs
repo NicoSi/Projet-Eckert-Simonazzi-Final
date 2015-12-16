@@ -46,11 +46,7 @@ public class Lieu
        get { return coordonneY; }
        set { coordonneY = value; }
    }
-	public List<Activités> GetlisteActivites
-	{
-        get { return listeActivites; }
-        set { listeActivites = value; }
-	}
+	
     public override string ToString()
     {
         string ch = "";
