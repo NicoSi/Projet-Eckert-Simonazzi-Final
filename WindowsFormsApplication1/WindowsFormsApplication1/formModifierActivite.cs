@@ -63,7 +63,7 @@ namespace WindowsFormsApplication1
             comboBoxHeureFin.SelectedItem = activiteAModifier.getHeureFinMars();
             comboBoxMinutesFin.SelectedItem = activiteAModifier.getMinuteFinMars();
 
-            
+            textBoxType.Text = activiteAModifier.GettypeActivite;
 
             //Remplissage de tree view type activite
 
@@ -240,10 +240,10 @@ namespace WindowsFormsApplication1
                 messageErreur = messageErreur + "\r\n - Nom activité";
             }
 
-            if (treeViewTypeActivite.SelectedNode != null)
+            if (textBoxType.Text != null)
             {
                 //recuperation type activite
-                typeActivite = treeViewTypeActivite.SelectedNode.Parent.Text + " - " + treeViewTypeActivite.SelectedNode.Text;
+                typeActivite = textBoxType.Text;
             }
             else
             {
@@ -400,6 +400,14 @@ namespace WindowsFormsApplication1
                 buttonAjouterParCarte_Click(sender, e);
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
+        }//
+>>>>>>> origin/master
 
       
 

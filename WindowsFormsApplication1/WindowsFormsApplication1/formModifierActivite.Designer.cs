@@ -60,7 +60,11 @@
             this.checkBoxLieu = new System.Windows.Forms.CheckBox();
             this.boutonAnnuler = new System.Windows.Forms.Button();
             this.buttonAjouterParCarte = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+            this.textBoxType = new System.Windows.Forms.TextBox();
+=======
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+>>>>>>> origin/master
             this.SuspendLayout();
             // 
             // textBoxCoordonnéesY
@@ -152,11 +156,15 @@
             // 
             // treeViewTypeActivite
             // 
-            this.treeViewTypeActivite.Location = new System.Drawing.Point(101, 129);
+            this.treeViewTypeActivite.Location = new System.Drawing.Point(101, 106);
             this.treeViewTypeActivite.Name = "treeViewTypeActivite";
-            this.treeViewTypeActivite.Size = new System.Drawing.Size(140, 102);
+            this.treeViewTypeActivite.Size = new System.Drawing.Size(271, 106);
             this.treeViewTypeActivite.TabIndex = 54;
+<<<<<<< HEAD
+            this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
+=======
             this.toolTip1.SetToolTip(this.treeViewTypeActivite, "Renseignez le type de l\'activité");
+>>>>>>> origin/master
             // 
             // boutonEnregistrerActivite
             // 
@@ -189,7 +197,7 @@
             // 
             // textBoxNomAct
             // 
-            this.textBoxNomAct.Location = new System.Drawing.Point(101, 80);
+            this.textBoxNomAct.Location = new System.Drawing.Point(98, 67);
             this.textBoxNomAct.Name = "textBoxNomAct";
             this.textBoxNomAct.Size = new System.Drawing.Size(100, 20);
             this.textBoxNomAct.TabIndex = 49;
@@ -210,7 +218,7 @@
             // 
             this.labelNomActivite.AutoSize = true;
             this.labelNomActivite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomActivite.Location = new System.Drawing.Point(23, 80);
+            this.labelNomActivite.Location = new System.Drawing.Point(26, 67);
             this.labelNomActivite.Name = "labelNomActivite";
             this.labelNomActivite.Size = new System.Drawing.Size(54, 20);
             this.labelNomActivite.TabIndex = 47;
@@ -271,7 +279,7 @@
             // 
             this.labelTypeActivité.AutoSize = true;
             this.labelTypeActivité.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypeActivité.Location = new System.Drawing.Point(23, 129);
+            this.labelTypeActivité.Location = new System.Drawing.Point(26, 106);
             this.labelTypeActivité.Name = "labelTypeActivité";
             this.labelTypeActivité.Size = new System.Drawing.Size(55, 20);
             this.labelTypeActivité.TabIndex = 41;
@@ -368,11 +376,20 @@
             this.buttonAjouterParCarte.Visible = false;
             this.buttonAjouterParCarte.Click += new System.EventHandler(this.buttonAjouterParCarte_Click);
             // 
+            // textBoxType
+            // 
+            this.textBoxType.Location = new System.Drawing.Point(101, 219);
+            this.textBoxType.Name = "textBoxType";
+            this.textBoxType.ReadOnly = true;
+            this.textBoxType.Size = new System.Drawing.Size(271, 20);
+            this.textBoxType.TabIndex = 73;
+            // 
             // formModifierActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 513);
+            this.Controls.Add(this.textBoxType);
             this.Controls.Add(this.buttonAjouterParCarte);
             this.Controls.Add(this.boutonAnnuler);
             this.Controls.Add(this.checkBoxLieu);
@@ -446,6 +463,10 @@
         private System.Windows.Forms.CheckBox checkBoxLieu;
         private System.Windows.Forms.Button boutonAnnuler;
         private System.Windows.Forms.Button buttonAjouterParCarte;
+<<<<<<< HEAD
+        private System.Windows.Forms.TextBox textBoxType;
+=======
         private System.Windows.Forms.ToolTip toolTip1;
+>>>>>>> origin/master
     }
 }

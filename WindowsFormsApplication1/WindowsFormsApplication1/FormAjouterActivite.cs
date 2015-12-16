@@ -169,11 +169,11 @@ namespace WindowsFormsApplication1
                 erreur = true;
                 messageErreur = messageErreur + "\r\n - Nom activité";
             }
-            
+
             if (treeViewTypeActivite.SelectedNode != null)
             {
                 //recuperation type activite
-                typeActivite = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
+                typeActivite = textBoxType.Text;
             }
             else
             {
@@ -291,7 +291,7 @@ namespace WindowsFormsApplication1
 
         private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
         {
-
+            textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
 
         }
 

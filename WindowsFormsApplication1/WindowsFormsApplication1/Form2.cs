@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
             foreach (Activités A in listeActivitéTableau)
             {
 
-                contenuListBox = A.getHoraireDebutMarsTexte() + "  : " + A.GetNomActivité;
+                contenuListBox = A.getHoraireDebutMarsTexte() + " - " + A.getHoraireFinMarsTexte()  + "  : " + A.GetNomActivité;
                 listBox1.Items.Add(contenuListBox);
 
             }

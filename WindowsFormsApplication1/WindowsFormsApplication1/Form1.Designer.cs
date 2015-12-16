@@ -71,7 +71,11 @@
             this.buttonAfficherCarte = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+            this.buttonQuitter = new System.Windows.Forms.Button();
+=======
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+>>>>>>> origin/master
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -562,9 +566,22 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Jour avec exploration";
             // 
+            // buttonQuitter
+            // 
+            this.buttonQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQuitter.Location = new System.Drawing.Point(1160, 516);
+            this.buttonQuitter.Name = "buttonQuitter";
+            this.buttonQuitter.Size = new System.Drawing.Size(104, 30);
+            this.buttonQuitter.TabIndex = 33;
+            this.buttonQuitter.Text = "Quitter";
+            this.buttonQuitter.UseVisualStyleBackColor = true;
+            this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
+            // 
             // Form1
             // 
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1276, 551);
+            this.Controls.Add(this.buttonQuitter);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.buttonAfficherCarte);
@@ -587,7 +604,11 @@
             this.Controls.Add(this.suivant);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+<<<<<<< HEAD
+            this.Text = "Accueil Planning";
+=======
             this.toolTip2.SetToolTip(this, "Cliquer sur un jour pour afficher ses activités");
+>>>>>>> origin/master
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
@@ -644,7 +665,11 @@
         private System.Windows.Forms.Button buttonAfficherCarte;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
+<<<<<<< HEAD
+        private System.Windows.Forms.Button buttonQuitter;
+=======
         private System.Windows.Forms.ToolTip toolTip2;
+>>>>>>> origin/master
 
 
     }

@@ -56,7 +56,10 @@
             this.richTextBoxCompteRendu = new System.Windows.Forms.RichTextBox();
             this.labelCompteRendu = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+=======
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+>>>>>>> origin/master
             this.panelInteractionActivité.SuspendLayout();
             this.panelListeActivité.SuspendLayout();
             this.panelCompteRendu.SuspendLayout();
@@ -322,7 +325,10 @@
             this.buttonEnregistrerCompteRendu.Size = new System.Drawing.Size(220, 23);
             this.buttonEnregistrerCompteRendu.TabIndex = 12;
             this.buttonEnregistrerCompteRendu.Text = "Enregistrer compte rendu";
+<<<<<<< HEAD
+=======
             this.toolTip1.SetToolTip(this.buttonEnregistrerCompteRendu, "Cliquer pour enregistrer le compte rendu");
+>>>>>>> origin/master
             this.buttonEnregistrerCompteRendu.UseVisualStyleBackColor = true;
             this.buttonEnregistrerCompteRendu.Click += new System.EventHandler(this.buttonEnregistrerCompteRendu_Click);
             // 
@@ -349,12 +355,16 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(693, 20);
+            this.button1.Location = new System.Drawing.Point(1085, 515);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 31);
             this.button1.TabIndex = 10;
+<<<<<<< HEAD
+            this.button1.Text = "Retour";
+=======
             this.button1.Text = "Revenir au planning";
             this.toolTip1.SetToolTip(this.button1, "Cliquer pour revenir à l\'accueil");
+>>>>>>> origin/master
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -362,7 +372,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 532);
+            this.ClientSize = new System.Drawing.Size(1279, 558);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelCompteRendu);
             this.Controls.Add(this.boutonJourPrecedent);
@@ -372,7 +382,7 @@
             this.Controls.Add(this.panelListeActivité);
             this.Controls.Add(this.panelInteractionActivité);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Affichage jour";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panelInteractionActivité.ResumeLayout(false);
             this.panelInteractionActivité.PerformLayout();
