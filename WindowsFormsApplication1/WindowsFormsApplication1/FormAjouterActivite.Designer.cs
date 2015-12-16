@@ -57,6 +57,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxMinuteFin = new System.Windows.Forms.ComboBox();
             this.buttonAjouterParCarte = new System.Windows.Forms.Button();
+            this.textBoxType = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelTitre
@@ -191,7 +192,7 @@
             // 
             this.treeViewTypeActivite.Location = new System.Drawing.Point(83, 129);
             this.treeViewTypeActivite.Name = "treeViewTypeActivite";
-            this.treeViewTypeActivite.Size = new System.Drawing.Size(256, 141);
+            this.treeViewTypeActivite.Size = new System.Drawing.Size(256, 118);
             this.treeViewTypeActivite.TabIndex = 28;
             this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
             // 
@@ -344,11 +345,20 @@
             this.buttonAjouterParCarte.Visible = false;
             this.buttonAjouterParCarte.Click += new System.EventHandler(this.buttonAjouterParCarte_Click);
             // 
+            // textBoxType
+            // 
+            this.textBoxType.Location = new System.Drawing.Point(83, 253);
+            this.textBoxType.Name = "textBoxType";
+            this.textBoxType.ReadOnly = true;
+            this.textBoxType.Size = new System.Drawing.Size(256, 20);
+            this.textBoxType.TabIndex = 45;
+            // 
             // FormAjouterActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 536);
+            this.Controls.Add(this.textBoxType);
             this.Controls.Add(this.buttonAjouterParCarte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxMinuteFin);
@@ -417,5 +427,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxMinuteFin;
         private System.Windows.Forms.Button buttonAjouterParCarte;
+        private System.Windows.Forms.TextBox textBoxType;
     }
 }

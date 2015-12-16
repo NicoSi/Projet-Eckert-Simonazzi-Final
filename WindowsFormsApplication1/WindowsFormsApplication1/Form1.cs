@@ -238,8 +238,13 @@ namespace WindowsFormsApplication1
             {
 
                 int JourBouton = int.Parse(ListeBoutons[i].Text);
+                Jour j = new Jour();
+                if (JourBouton < 500)
+                {
+                    j = listeJourForm1[JourBouton];
+                }
 
-                Jour j = listeJourForm1[JourBouton];
+                
 
                 foreach (Activités a in j.getlisteActivite)
                 {
@@ -541,11 +546,12 @@ namespace WindowsFormsApplication1
 
                 foreach (Activités A in J.getlisteActivite)
                 {
-                    termePresentNom = A.GetnomActivite.IndexOf(termeARechercher);
-                    termePresentTexteDescriptif = A.GettexteDescriptif.IndexOf(termeARechercher);
+                    termePresentNom = A.GetnomActivite.IndexOf(termeARechercher, StringComparison.InvariantCultureIgnoreCase);
+                    termePresentTexteDescriptif = A.GettexteDescriptif.IndexOf(termeARechercher, StringComparison.InvariantCultureIgnoreCase);
                     if (termePresentNom != -1 || termePresentTexteDescriptif != -1)
                     {
                         termePresentDansJour = true;
+                       
                     }
                 }
 
@@ -1256,7 +1262,9 @@ namespace WindowsFormsApplication1
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            enregistrerProjet();
+
+               enregistrerProjet();
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -1269,6 +1277,16 @@ namespace WindowsFormsApplication1
             FormAfficherLieu form = new FormAfficherLieu(listeDeLieux, listeJourForm1, planning);
             form.Show();
 
+        }
+
+        private void buttonQuitter_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir quitter l'application ?", "Info", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                enregistrerProjet();
+                this.Close();
+            }
         }
     }
 }
