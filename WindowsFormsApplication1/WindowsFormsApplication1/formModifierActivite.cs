@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class formModifierActivite : Form
+    public partial class FormModifierActivite : Form
     {
         //Attributs
         private Jour objetJour;
@@ -19,8 +19,13 @@ namespace WindowsFormsApplication1
         private List<Jour> listeJour;
         private Planning planning;
 
+<<<<<<< HEAD
         //Constructeur
         public formModifierActivite(Jour objetJourSelection, List<Astronautes> tempListeAstronautes, Activités tempActiviteAModifier, List<Lieu> tempListeDeLieux,List<Jour> tempListeJours ,Planning P)
+=======
+
+        public FormModifierActivite(Jour objetJourSelection, List<Astronautes> tempListeAstronautes, Activités tempActiviteAModifier, List<Lieu> tempListeDeLieux,List<Jour> tempListeJours ,Planning P)
+>>>>>>> origin/master
         {
             
             InitializeComponent();
@@ -197,7 +202,21 @@ namespace WindowsFormsApplication1
 
         }
 
+<<<<<<< HEAD
         // Recréer une activité avec les champs renseignés et renvoie des messages d'erreurs si tous les champs ne sont pas spécifiés par l'utilisateur
+=======
+        private void checkedListBoxAstronautes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelPlageHoraireActivité_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Methode pour recuperer les informations du form et mettre à jour le l'activite selectionne
+>>>>>>> origin/master
         private void boutonEnregistrerActivite_Click_1(object sender, EventArgs e)
         {
             string messageErreur = "Veuillez remplir les champs suivants :";
@@ -367,7 +386,7 @@ namespace WindowsFormsApplication1
         //Affiche la carte eprmettant d'ajouter un lieu
         private void buttonAjouterParCarte_Click(object sender, EventArgs e)
         {
-            nouveauLieuCarte form = new nouveauLieuCarte();
+            FormNouveauLieuCarte form = new FormNouveauLieuCarte();
 
             if (form.ShowDialog(this) == DialogResult.OK && form.getNomLieu != "" && form.getPositionX.ToString() != "" && form.getPositionY.ToString() != "")
             {
@@ -382,12 +401,19 @@ namespace WindowsFormsApplication1
                 buttonAjouterParCarte_Click(sender, e);
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
         private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
         {
             textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
+<<<<<<< HEAD
         }//
+=======
+        }
+>>>>>>> origin/master
 
       
 

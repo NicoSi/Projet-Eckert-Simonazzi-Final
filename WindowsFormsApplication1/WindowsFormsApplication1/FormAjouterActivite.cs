@@ -16,8 +16,8 @@ namespace WindowsFormsApplication1
         private List<Lieu> listeLieu;
         private Jour jourActuel;
         private Planning planning;
-        private int positionX, positionY;
 
+        //Constructeur de FormAjouterActivite
         public FormAjouterActivite(Jour tempJourActuel, List<Astronautes> tempListeAstronautes, List<Lieu> tempListeLieu, Planning tempPlanning)
         {
             InitializeComponent();
@@ -27,9 +27,8 @@ namespace WindowsFormsApplication1
             planning = tempPlanning;
         }
 
-
-
-       
+        
+       //Le load du FormAjouterActivite remplis les different elements du form
         private void FormAjouterActivite_Load(object sender, EventArgs e)
         {
 
@@ -140,12 +139,10 @@ namespace WindowsFormsApplication1
                 comboBoxListeLieu.Items.Add(texteLieu);
             }
 
-
-
         }
 
         
-
+        // Ce bouton permet de recuperer toutes les informations necessaire a la creation d'une activite et creer une activite
         private void boutonEnregistrerActivite_Click(object sender, EventArgs e)
         {
 
@@ -289,32 +286,15 @@ namespace WindowsFormsApplication1
             
         }
 
+        // Cette méthode permet de recuperer le type en format string selectionne par l'utilisateur
         private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
         {
             textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
 
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelAstronautesActivite_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelDescriptifActivite_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //CheckBox pour ajouter un lieu par coordonnées ou par carte
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxNouveauLieu.Checked == true)
@@ -341,26 +321,9 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void labelJourActivité_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void labelPlageHoraireActivité_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxMinuteDebut_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //Protection du comboBoxMinuteDebut dans les cas specifique (24h par exemple)
         private void comboBoxHeureDebut_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Si jamais on selectionne l'horaire 24h40, on enleve le 50 dans la liste des minutes
@@ -391,16 +354,7 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void labelLieuActivite_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxListeLieu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //Protection du comboBoxMinuteFin dans les cas specifique (24h par exemple)
         private void comboBoxHeureFin_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Si jamais on selectionne l'horaire 24h40, on enleve le 50 dans la liste des minutes
@@ -429,9 +383,10 @@ namespace WindowsFormsApplication1
             }
         }
 
+        //Ouvre un autre form pour ajouter un lieu par la carte
         private void buttonAjouterParCarte_Click(object sender, EventArgs e)
         {
-            nouveauLieuCarte form = new nouveauLieuCarte();
+            FormNouveauLieuCarte form = new FormNouveauLieuCarte();
 
             if (form.ShowDialog(this) == DialogResult.OK && form.getNomLieu != "" && form.getPositionX.ToString() != "" && form.getPositionY.ToString() != "")
             {

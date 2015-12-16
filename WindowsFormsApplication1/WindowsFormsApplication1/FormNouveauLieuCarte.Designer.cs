@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class nouveauLieuCarte
+    partial class FormNouveauLieuCarte
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nouveauLieuCarte));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNouveauLieuCarte));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxCoordonneeX = new System.Windows.Forms.TextBox();
             this.textBoxCoordonneeY = new System.Windows.Forms.TextBox();
@@ -55,7 +55,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox1, "Cliquer à l\'endroit où vous souhaiter ajouter un lieu");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
             // textBoxCoordonneeX
@@ -144,7 +143,7 @@
             this.toolTip1.SetToolTip(this.button2, "Cliquer pour annuler");
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // nouveauLieuCarte
+            // FormNouveauLieuCarte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -158,11 +157,9 @@
             this.Controls.Add(this.labelCoordonneeX);
             this.Controls.Add(this.textBoxCoordonneeY);
             this.Controls.Add(this.textBoxCoordonneeX);
-            this.Name = "nouveauLieuCarte";
+            this.Name = "FormNouveauLieuCarte";
             this.Text = "nouveauLieuCarte";
             this.toolTip1.SetToolTip(this, "Formulaire d\'ajout de lieu");
-            this.Load += new System.EventHandler(this.nouveauLieuCarte_Load);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nouveauLieuCarte_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

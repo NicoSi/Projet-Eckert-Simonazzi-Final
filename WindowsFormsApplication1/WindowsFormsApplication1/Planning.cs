@@ -11,11 +11,13 @@ using System.Text;
 
 public class Planning
 {
+    //Attributs
     private List<Jour> listeDeJours;
     private DateTime dateDebut;
     private string nomPlanning;
     private static int idPlanning;
-    //constructeur par défaut
+
+    //Constructeur 1 de Planning
     public Planning(string tempNomPlanning, List<Jour> tempListeDeJour, DateTime tempDateDebut)
     {
         nomPlanning = tempNomPlanning;
@@ -23,14 +25,16 @@ public class Planning
         dateDebut = tempDateDebut;
     }
 
+    //Constructeur 2 de Planning
     public Planning(string tempNomPlanning, DateTime tempDateDebut)
     {
         nomPlanning = tempNomPlanning;
         dateDebut = tempDateDebut;
     }
+
+
     //Accesseurs//
  
-
     public string GetnomPlanning
     {
         get { return nomPlanning; }
@@ -42,7 +46,6 @@ public class Planning
         set { idPlanning = value; }
     }
 
-
     public DateTime GetDateDebut
     {
         get { return dateDebut; }
@@ -51,7 +54,7 @@ public class Planning
 
     //FinAccesseurs//
 
-
+    //Renvoie le jour actuel en calendrier marsien
 	public virtual int getJourActuel()
 	{
         DateTime dateActuelle = new DateTime();
