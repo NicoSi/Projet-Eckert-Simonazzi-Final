@@ -29,11 +29,7 @@ public class Planning
         dateDebut = tempDateDebut;
     }
     //Accesseurs//
-    public List<Jour> GetListeJour
-    {
-        get { return listeDeJours;}
-        set { listeDeJours = value; }
-    }
+ 
 
     public string GetnomPlanning
     {
@@ -45,25 +41,7 @@ public class Planning
         get { return idPlanning; }
         set { idPlanning = value; }
     }
-    //FinAccesseurs//
 
-    // Renvoi le jour de la liste de jour en fonction de l'id.
-    public Jour getJourParId (int tempId)
-    {
-
-        return listeDeJours[tempId];
-
-    }  
-
-    
-
-
-
-	public virtual object tempActuel
-	{
-		get;
-		set;
-	}
 
     public DateTime GetDateDebut
     {
@@ -71,6 +49,7 @@ public class Planning
         set { dateDebut = value; }
     }
 
+    //FinAccesseurs//
 
 
 	public virtual int getJourActuel()
@@ -84,40 +63,7 @@ public class Planning
         return numeroJourMars;
 	}
 
-	public virtual void getListeJourPasse()
-	{
-		throw new System.NotImplementedException();
-	}
 
-	public virtual void getListeJourSuivant()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void getJourOccupe()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void clearActivite()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void modifierEtatJour()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void rechercheJourParActivite()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void rechercheJourParMotCle()
-	{
-		throw new System.NotImplementedException();
-	}
 
 }
 

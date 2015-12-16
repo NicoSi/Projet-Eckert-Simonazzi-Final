@@ -36,24 +36,7 @@ namespace WindowsFormsApplication1
             
             
         }
-        //Accesseurs//
-
-        public List<Jour> GetlisteJour
-        {
-            get { return listeJour; }
-            set { listeJour = value; }
-        }
-        public int GetjourSelection
-        {
-            get { return jourSelection; }
-            set { jourSelection = value; }
-        }
-        public List<Activités> GetlisteActivitésTableau
-        {
-            get { return listeActivitéTableau; }
-            set { listeActivitéTableau = value; }
-        }
-        //FinAccesseurs//
+        
 
         //Remplissage de la listbox
         public void remplissageListBox()
@@ -101,15 +84,6 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void label1_Click(object sender, EventArgs e)
         {

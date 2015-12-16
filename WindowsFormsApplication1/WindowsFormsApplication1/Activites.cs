@@ -192,11 +192,7 @@ public class Activités
         get{return nomActivité;}
         set { nomActivité = value; }
     }
-    public int GetnbActivité
-    {
-        get { return nbActivité; }
-        set { nbActivité = value; }
-    }
+ 
 
     public string GetnomLieuDeActivite
     {
@@ -208,43 +204,6 @@ public class Activités
     //FinAccesseurs
 
 
-	public virtual void RenvoieActiviteParMotCle()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void ajouterLieu()
-	{
-		throw new System.NotImplementedException();
-	}
-    public void RenvoyerLieu()
-    {
-         this.getLieu();
-    }
-	public virtual void supprimerLieu()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void ajouterAstronautes()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void supprimerAstronautes()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void getListeAstronautes()
-	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void getLieu()
-	{
-		throw new System.NotImplementedException();
-	}
 
 }
 

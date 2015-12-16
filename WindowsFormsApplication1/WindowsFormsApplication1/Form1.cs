@@ -29,11 +29,7 @@ namespace WindowsFormsApplication1
         private List<Button> ListeBoutons = new List<Button>();
         private bool modeRecherche;
 
-        public List<Jour> GetlisteJourForm1
-        {
-            get { return listeJourForm1; }
-            set { listeJourForm1 = value; }
-        }
+      
 
         //Constructeur par défaut
         public Form1()
@@ -43,68 +39,6 @@ namespace WindowsFormsApplication1
             ChargerFichierXMLPrincipal();
         }
 
-        //Accesseurs//
-        public Planning GetPLanning
-        {
-            get { return planning; }
-            set { planning = value; }
-        }
-
-        public int GetjourPivot
-        {
-            get { return jourPivot; }
-            set { jourPivot = value; }
-        }
-
-        public int GethauteurPanel
-        {
-            get { return hauteurPanel; }
-            set { hauteurPanel = value; }
-        }
-
-        public int GethauteurBouton
-        {
-            get { return hauteurBouton; }
-            set { hauteurBouton = value; }
-        }
-
-        public int GetintervalleBouton
-        {
-            get { return intervalleBouton; }
-            set { intervalleBouton = value; }
-        }
-        public int GetpositionLigne1
-        {
-            get { return positionLigne1; }
-            set { positionLigne1 = value; }
-        }
-        public int GetpositionLigne2
-        {
-            get { return positionLigne2; }
-            set { positionLigne2 = value; }
-        }
-        public int GetpositionLigne3
-        {
-            get { return positionLigne3; }
-            set { positionLigne3 = value; }
-        }
-        public int GetnbJourAffichage
-        {
-            get { return nbJourAffichage; }
-            set { nbJourAffichage = value; }
-        }
-
-        public int GetjourActuel
-        {
-            get { return jourActuel; }
-            set { jourActuel = value; }
-        }
-
-        public List<Button> GetlisteBoutons
-        {
-            get { return ListeBoutons; }
-            set { ListeBoutons = value; }
-        }
         //FinAccesseurs//
 
 
@@ -112,62 +46,6 @@ namespace WindowsFormsApplication1
         //Au chargement de la page, on initialise le planning qui contient la liste de jour et propose un premier affichage par défaut.
         private void Form1_Load_1(object sender, EventArgs e)
         {
-
-           /* Lieu baseMars = new Lieu("Base", 0,0);
-
-            List<Astronautes> listeAstronautesParDefaut1 = new List<Astronautes>();
-            List<Astronautes> listeAstronautesParDefaut2 = new List<Astronautes>();
-
-            listeDesAstronautes.Clear();
-
-            Astronautes a1 = new Astronautes("Liu", "Wang", 30);
-            Astronautes a2 = new Astronautes("Alan", "Shepard", 30);
-            Astronautes a3 = new Astronautes("Pokora", "Matt", 30);
-            Astronautes a4 = new Astronautes("Valentina ", "Terechkova", 28);
-            Astronautes a5 = new Astronautes("Claudie", "Haignere", 35);
-
-            listeDesAstronautes.Add(a1);
-            listeDesAstronautes.Add(a2);
-            listeDesAstronautes.Add(a3);
-            listeDesAstronautes.Add(a4);
-            listeDesAstronautes.Add(a5);
-
-            List<Activités> listeActiviteParDefaut = new List<Activités>();
-            Activités ac1 = new Activités("Temps de sommeil", "Living - Sleeping", 0, 420, baseMars, listeDesAstronautes, "Sieste matinale pour l'équipe");
-            listeActiviteParDefaut.Add(ac1);
-
-            Activités ac2 = new Activités("Repas matin", "Living - Eating", 420, 480, baseMars, listeDesAstronautes, "Repas de l'équipe le matin");
-            listeActiviteParDefaut.Add(ac2);
-
-            Activités ac3 = new Activités("Temps libre matin", "Living - Private", 480, 720, baseMars, listeDesAstronautes, "Temps alloués pour les activités personnelles");
-            listeActiviteParDefaut.Add(ac3);
-
-            Activités ac4 = new Activités("Repas midi", "Living - Eating", 720, 840, baseMars, listeDesAstronautes, "Repas de l'équipe à midi");
-            listeActiviteParDefaut.Add(ac4);
-
-            Activités ac5 = new Activités("Temps libre après midi", "Living - Private", 840, 1140, baseMars, listeDesAstronautes, "Temps alloués pour les activités personnelles");
-            listeActiviteParDefaut.Add(ac5);
-
-            Activités ac6 = new Activités("Repas soir", "Living - Eating", 1140, 1260, baseMars, listeDesAstronautes, "Repas de l'équipe le soir");
-            listeActiviteParDefaut.Add(ac6);
-
-            Activités ac7 = new Activités("Temps libre soir", "Living - Private", 1260, 1380, baseMars, listeDesAstronautes, "Temps alloués pour les activités personnelles");
-            listeActiviteParDefaut.Add(ac7);
-
-            Activités ac8 = new Activités("Temps de sommeil", "Living - Sleeping", 1380, 1480, baseMars, listeDesAstronautes, "Sommeil soir");
-            listeActiviteParDefaut.Add(ac8);
-
-            */
-
-
-            List<Jour> listeJourPlanning = new List<Jour>();
-            listeJourPlanning = listeJourForm1;
-
-            /*foreach (Jour j in listeJourPlanning)
-            {
-                j.getlisteActivite = listeActiviteParDefaut;
-            }*/
-
             jourActuel = planning.getJourActuel();
             jourPivot = 0;
 
@@ -1279,7 +1157,14 @@ namespace WindowsFormsApplication1
 
         }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+   
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir quitter l'application ?", "Info", MessageBoxButtons.YesNo);
@@ -1301,6 +1186,7 @@ namespace WindowsFormsApplication1
 
 
         }
+>>>>>>> origin/master
     }
 }
 

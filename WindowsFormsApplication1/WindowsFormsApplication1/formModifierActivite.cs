@@ -192,11 +192,6 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void comboBoxHeureDebut_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -406,11 +401,14 @@ namespace WindowsFormsApplication1
                 buttonAjouterParCarte_Click(sender, e);
             }
         }
+<<<<<<< HEAD
+=======
 
         private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
         {
             textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
         }//
+>>>>>>> origin/master
 
       
 
