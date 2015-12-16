@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        //Attributs
         private List<Jour> listeJourForm1 = new List<Jour>();
         private List<Jour> listeJourRecherche = new List<Jour>();
         private List<Activités> listeDesActivites = new List<Activités>();
@@ -82,7 +83,7 @@ namespace WindowsFormsApplication1
             pictureBox4.Image = imageIcone;
 
         }
-
+        //Colorise les boutons jours suivants leur temporalité (passé, futur, présent)
         public void coloriseBouton()
         {
             foreach (Button b in ListeBoutons)
@@ -104,7 +105,7 @@ namespace WindowsFormsApplication1
             }
 
         }
-
+        // Permet d'ajouter les icônes relatifs aux activités de type exploration sur les jours
         public void explorationBouton()
         {
             foreach (PictureBox p in listeIconeExploration)
@@ -389,7 +390,7 @@ namespace WindowsFormsApplication1
             }
 
         }
-
+        // Permet d'annuler la recherche
         private void buttonAnnuler_Click(object sender, EventArgs e)
         {
             modeRecherche = false;
@@ -399,7 +400,7 @@ namespace WindowsFormsApplication1
             labelResultatRecherche.Visible = false;
         }
 
-        // Recherche d'un terme dans le nom d'activite, texte descriptif ou compte rendu
+        // Recherche d'un terme dans le nom d'activite, texte descriptif ou compte rendu pour renvoyer les jours correspondants
         private void buttonRecherche_Click(object sender, EventArgs e)
         {
             string termeARechercher = textBoxRecherche.Text;
@@ -567,7 +568,7 @@ namespace WindowsFormsApplication1
 
 
         }
-
+        // Permet d'afficher les jours en mode 7 jours
         private void button1_Click_1(object sender, EventArgs e)
         {
 
@@ -637,7 +638,7 @@ namespace WindowsFormsApplication1
         }
 
 
-
+        //permet d'afficher les jours en mode 14 jours
         private void button1_Click_2(object sender, EventArgs e)
         {
 
@@ -720,7 +721,7 @@ namespace WindowsFormsApplication1
             afficherJour(jourPivot);
 
         }
-
+        //Permet d'afficher les jours en mode 21 jours
         private void affichage7Jours_Click(object sender, EventArgs e)
         {
 
@@ -772,7 +773,7 @@ namespace WindowsFormsApplication1
             afficherJour(jourPivot);
 
         }
-
+        //Permet d'afficher le form 2 
         public void affichageNiveau2(int tmpIdJour)
         {
             Form2 Niveau2 = new Form2(listeJourForm1, tmpIdJour, planning, listeDesAstronautes, listeDeLieux);
@@ -907,7 +908,8 @@ namespace WindowsFormsApplication1
             affichageNiveau2(int.Parse(boutonJour21.Text));
         }
 
-        public void enregistrerProjet() // Permet d'enregistrer tous les attributs de toutes les classes de tout le projet
+        // Permet d'enregistrer tous les attributs de toutes les classes de tout le projet
+        public void enregistrerProjet() 
         {
             XmlDocument xmlDoc = new XmlDocument();
             XmlNode rootNode = xmlDoc.CreateElement("Enregistrement");
@@ -1067,7 +1069,7 @@ namespace WindowsFormsApplication1
             listeDesActivites.Clear();
             listeDesAstronautes.Clear();
             listeJourForm1.Clear();
-
+            //Serialization du planning
             XmlNode planningNode = xmldoc.SelectSingleNode("Enregistrement").SelectSingleNode("Plannings");
             DateTime dateDebut = DateTime.Parse(planningNode.SelectSingleNode("DateDebut").InnerText);
             string nom = planningNode.SelectSingleNode("nom").InnerText;
@@ -1075,7 +1077,7 @@ namespace WindowsFormsApplication1
             List<Jour> listJours = new List<Jour>();
 
             XmlNodeList jourNode = xmldoc.GetElementsByTagName("Jour");
- 
+            //Serialization des jours
             foreach (XmlNode jour in jourNode)
             {
                 string Etat = jour.SelectSingleNode("Etat").InnerText;
@@ -1083,6 +1085,7 @@ namespace WindowsFormsApplication1
                 string compteRendu = jour.SelectSingleNode("CompteRendu").InnerText;
                 List<Activités> listActs = new List<Activités>();
 
+                //Serialization des activités
                 XmlNodeList activiteNode = jour.SelectSingleNode("Activites").SelectNodes("Activite");
                 foreach(XmlNode A in activiteNode)
                 {
@@ -1100,6 +1103,8 @@ namespace WindowsFormsApplication1
 
                     List<Astronautes> maListeAstronautes = new List<Astronautes>();
                     XmlNodeList astroNode = A.SelectSingleNode("Astronautes").SelectNodes("Astronaute");
+
+                    //Serialization des astronautes
                     foreach (XmlNode nodeCosmonaute in astroNode)
                     {
                         int idCosmonaute = int.Parse(nodeCosmonaute.SelectSingleNode("ID").InnerText);
@@ -1147,11 +1152,8 @@ namespace WindowsFormsApplication1
 
         }
 
-<<<<<<< HEAD
 
-=======
         //Quitte le formulaire et l'application et enregistre le formulaire
->>>>>>> origin/master
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir quitter l'application ?", "Info", MessageBoxButtons.YesNo);
@@ -1160,25 +1162,9 @@ namespace WindowsFormsApplication1
                 enregistrerProjet();
                 this.Close();
             }
-<<<<<<< HEAD
      
         }
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-            
-=======
->>>>>>> origin/master
-        }
-     
 
-<<<<<<< HEAD
-        private void button1_Click_3(object sender, EventArgs e)
-        {
-
-        }
-
-=======
->>>>>>> origin/master
     }
 }
 

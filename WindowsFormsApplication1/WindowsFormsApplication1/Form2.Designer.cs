@@ -320,13 +320,10 @@
             this.buttonEnregistrerCompteRendu.Size = new System.Drawing.Size(220, 23);
             this.buttonEnregistrerCompteRendu.TabIndex = 12;
             this.buttonEnregistrerCompteRendu.Text = "Enregistrer compte rendu";
-<<<<<<< HEAD
 
             this.toolTip1.SetToolTip(this.buttonEnregistrerCompteRendu, "Cliquer pour enregistrer le compte rendu");
 
-=======
             this.toolTip1.SetToolTip(this.buttonEnregistrerCompteRendu, "Cliquer pour enregistrer le compte rendu");
->>>>>>> origin/master
             this.buttonEnregistrerCompteRendu.UseVisualStyleBackColor = true;
             this.buttonEnregistrerCompteRendu.Click += new System.EventHandler(this.buttonEnregistrerCompteRendu_Click);
             // 
@@ -357,10 +354,8 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 31);
             this.button1.TabIndex = 10;
-<<<<<<< HEAD
             this.button1.Text = "Retour";
-=======
->>>>>>> origin/master
+
             this.button1.Text = "Revenir au planning";
             this.toolTip1.SetToolTip(this.button1, "Cliquer pour revenir à l\'accueil");
             this.button1.UseVisualStyleBackColor = true;

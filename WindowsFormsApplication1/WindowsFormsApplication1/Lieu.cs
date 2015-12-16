@@ -11,16 +11,13 @@ using System.Text;
 
 public class Lieu
 {
-
-    //Attributs 
+    
     private string nomLieu;
     private double coordonneX, coordonneY;
     private int idLieu;
     private static int nbLieu;
     private List<Activités> listeActivites = new List<Activités>();
-
-
-    //Constructeur de Lieu
+    //Constructeur par défaut
     public Lieu(string tempNomLieu, double tempCoordonneX, double tempCoordonneY)
     {
         nomLieu = tempNomLieu;
@@ -57,7 +54,7 @@ public class Lieu
         return ch;
     }
 
- 
+    // Permet de comparer deux lieux => utile dans le XML lorsqu'on sérialize les lieux
     public override bool Equals(object obj)
     {
         Lieu l = obj as Lieu;
