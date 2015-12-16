@@ -5,3 +5,10 @@ D:\Nicolas\Mes documents\ENSC\Prog\Projet-Eckert-Simonazzi-Final\WindowsFormsApp
 D:\Nicolas\Mes documents\ENSC\Prog\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\obj\Debug\TestUnitaire.csprojResolveAssemblyReference.cache
 D:\Nicolas\Mes documents\ENSC\Prog\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\obj\Debug\TestUnitaire.dll
 D:\Nicolas\Mes documents\ENSC\Prog\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\obj\Debug\TestUnitaire.pdb
+\\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\bin\Debug\TestUnitaire.dll
+\\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\bin\Debug\TestUnitaire.pdb
+\\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\bin\Debug\WindowsFormsApplication1.exe
+\\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\bin\Debug\WindowsFormsApplication1.pdb
+\\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\obj\Debug\TestUnitaire.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\obj\Debug\TestUnitaire.dll
+\\psf\Home\Desktop\Projet-Eckert-Simonazzi-Final\WindowsFormsApplication1\TestUnitaire\obj\Debug\TestUnitaire.pdb

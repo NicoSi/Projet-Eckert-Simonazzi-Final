@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelInteractionActivité = new System.Windows.Forms.Panel();
             this.labelAstronautesActivite = new System.Windows.Forms.Label();
             this.listBoxAstronautes = new System.Windows.Forms.ListBox();
@@ -55,6 +56,10 @@
             this.richTextBoxCompteRendu = new System.Windows.Forms.RichTextBox();
             this.labelCompteRendu = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
+=======
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+>>>>>>> origin/master
             this.panelInteractionActivité.SuspendLayout();
             this.panelListeActivité.SuspendLayout();
             this.panelCompteRendu.SuspendLayout();
@@ -79,6 +84,7 @@
             this.panelInteractionActivité.Name = "panelInteractionActivité";
             this.panelInteractionActivité.Size = new System.Drawing.Size(568, 416);
             this.panelInteractionActivité.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.panelInteractionActivité, "Informations concernant l\'activité sélectionnée");
             // 
             // labelAstronautesActivite
             // 
@@ -137,6 +143,7 @@
             this.buttonSupprimerActivité.Size = new System.Drawing.Size(107, 30);
             this.buttonSupprimerActivité.TabIndex = 6;
             this.buttonSupprimerActivité.Text = "Supprimer activité";
+            this.toolTip1.SetToolTip(this.buttonSupprimerActivité, "Cliquer pour supprimer cette activité");
             this.buttonSupprimerActivité.UseVisualStyleBackColor = true;
             this.buttonSupprimerActivité.Click += new System.EventHandler(this.buttonSupprimerActivité_Click);
             // 
@@ -147,6 +154,7 @@
             this.buttonAfficherLieuActivité.Size = new System.Drawing.Size(107, 30);
             this.buttonAfficherLieuActivité.TabIndex = 4;
             this.buttonAfficherLieuActivité.Text = "Carte des lieux";
+            this.toolTip1.SetToolTip(this.buttonAfficherLieuActivité, "Cliquer pour afficher la carte des lieux");
             this.buttonAfficherLieuActivité.UseVisualStyleBackColor = true;
             this.buttonAfficherLieuActivité.Click += new System.EventHandler(this.buttonAfficherLieuActivité_Click);
             // 
@@ -197,6 +205,7 @@
             this.buttonModifierActivité.Size = new System.Drawing.Size(107, 30);
             this.buttonModifierActivité.TabIndex = 5;
             this.buttonModifierActivité.Text = "Modifier Activité";
+            this.toolTip1.SetToolTip(this.buttonModifierActivité, "Cliquer pour modifier l\'activité sélectionée");
             this.buttonModifierActivité.UseVisualStyleBackColor = true;
             this.buttonModifierActivité.Click += new System.EventHandler(this.buttonModifierActivité_Click);
             // 
@@ -207,6 +216,7 @@
             this.buttonAjouterActivité.Size = new System.Drawing.Size(107, 30);
             this.buttonAjouterActivité.TabIndex = 7;
             this.buttonAjouterActivité.Text = "Ajouter une activité";
+            this.toolTip1.SetToolTip(this.buttonAjouterActivité, "Clisuer pour ajouter une activité");
             this.buttonAjouterActivité.UseVisualStyleBackColor = true;
             this.buttonAjouterActivité.Click += new System.EventHandler(this.buttonAjouterActivité_Click);
             // 
@@ -221,6 +231,7 @@
             this.panelListeActivité.Name = "panelListeActivité";
             this.panelListeActivité.Size = new System.Drawing.Size(382, 416);
             this.panelListeActivité.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.panelListeActivité, "Ici sont renseignées les activités de la journée");
             // 
             // label2
             // 
@@ -239,6 +250,7 @@
             this.boutonEffacerActivite.Size = new System.Drawing.Size(114, 38);
             this.boutonEffacerActivite.TabIndex = 8;
             this.boutonEffacerActivite.Text = "Effacer toutes les activités";
+            this.toolTip1.SetToolTip(this.boutonEffacerActivite, "Cliquer pour effacer les activités de cette journée");
             this.boutonEffacerActivite.UseVisualStyleBackColor = true;
             this.boutonEffacerActivite.Click += new System.EventHandler(this.boutonEffacerActivite_Click);
             // 
@@ -281,6 +293,7 @@
             this.boutonJourSuivant.Size = new System.Drawing.Size(110, 26);
             this.boutonJourSuivant.TabIndex = 4;
             this.boutonJourSuivant.Text = "Jour suivant";
+            this.toolTip1.SetToolTip(this.boutonJourSuivant, "Cliquer pour accéder au jour suivant");
             this.boutonJourSuivant.UseVisualStyleBackColor = true;
             this.boutonJourSuivant.Click += new System.EventHandler(this.boutonJourSuivant_Click);
             // 
@@ -291,6 +304,7 @@
             this.boutonJourPrecedent.Size = new System.Drawing.Size(110, 26);
             this.boutonJourPrecedent.TabIndex = 5;
             this.boutonJourPrecedent.Text = "Jour precedent";
+            this.toolTip1.SetToolTip(this.boutonJourPrecedent, "Cliquer pour revenir au jour précédent");
             this.boutonJourPrecedent.UseVisualStyleBackColor = true;
             this.boutonJourPrecedent.Click += new System.EventHandler(this.boutonJourPrecedent_Click);
             // 
@@ -311,6 +325,10 @@
             this.buttonEnregistrerCompteRendu.Size = new System.Drawing.Size(220, 23);
             this.buttonEnregistrerCompteRendu.TabIndex = 12;
             this.buttonEnregistrerCompteRendu.Text = "Enregistrer compte rendu";
+<<<<<<< HEAD
+=======
+            this.toolTip1.SetToolTip(this.buttonEnregistrerCompteRendu, "Cliquer pour enregistrer le compte rendu");
+>>>>>>> origin/master
             this.buttonEnregistrerCompteRendu.UseVisualStyleBackColor = true;
             this.buttonEnregistrerCompteRendu.Click += new System.EventHandler(this.buttonEnregistrerCompteRendu_Click);
             // 
@@ -322,6 +340,7 @@
             this.richTextBoxCompteRendu.Size = new System.Drawing.Size(220, 305);
             this.richTextBoxCompteRendu.TabIndex = 11;
             this.richTextBoxCompteRendu.Text = "";
+            this.toolTip1.SetToolTip(this.richTextBoxCompteRendu, "Tapez un compte rendu pour cette journée");
             // 
             // labelCompteRendu
             // 
@@ -340,7 +359,12 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 31);
             this.button1.TabIndex = 10;
+<<<<<<< HEAD
             this.button1.Text = "Retour";
+=======
+            this.button1.Text = "Revenir au planning";
+            this.toolTip1.SetToolTip(this.button1, "Cliquer pour revenir à l\'accueil");
+>>>>>>> origin/master
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -400,5 +424,6 @@
         private System.Windows.Forms.RichTextBox richTextBoxCompteRendu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonEnregistrerCompteRendu;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

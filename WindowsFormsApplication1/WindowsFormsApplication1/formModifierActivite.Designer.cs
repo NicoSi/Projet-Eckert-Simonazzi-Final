@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBoxCoordonnéesY = new System.Windows.Forms.TextBox();
             this.textBoxCoordonnéesX = new System.Windows.Forms.TextBox();
             this.labelLieuCoordonneeY = new System.Windows.Forms.Label();
@@ -59,7 +60,11 @@
             this.checkBoxLieu = new System.Windows.Forms.CheckBox();
             this.boutonAnnuler = new System.Windows.Forms.Button();
             this.buttonAjouterParCarte = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.textBoxType = new System.Windows.Forms.TextBox();
+=======
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+>>>>>>> origin/master
             this.SuspendLayout();
             // 
             // textBoxCoordonnéesY
@@ -155,7 +160,11 @@
             this.treeViewTypeActivite.Name = "treeViewTypeActivite";
             this.treeViewTypeActivite.Size = new System.Drawing.Size(271, 106);
             this.treeViewTypeActivite.TabIndex = 54;
+<<<<<<< HEAD
             this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
+=======
+            this.toolTip1.SetToolTip(this.treeViewTypeActivite, "Renseignez le type de l\'activité");
+>>>>>>> origin/master
             // 
             // boutonEnregistrerActivite
             // 
@@ -164,6 +173,7 @@
             this.boutonEnregistrerActivite.Size = new System.Drawing.Size(126, 38);
             this.boutonEnregistrerActivite.TabIndex = 53;
             this.boutonEnregistrerActivite.Text = "Enregistrer la modification";
+            this.toolTip1.SetToolTip(this.boutonEnregistrerActivite, "Cliquez pour enregistrer");
             this.boutonEnregistrerActivite.UseVisualStyleBackColor = true;
             this.boutonEnregistrerActivite.Click += new System.EventHandler(this.boutonEnregistrerActivite_Click_1);
             // 
@@ -174,6 +184,7 @@
             this.richTextBoxDescriptif.Size = new System.Drawing.Size(233, 81);
             this.richTextBoxDescriptif.TabIndex = 52;
             this.richTextBoxDescriptif.Text = "";
+            this.toolTip1.SetToolTip(this.richTextBoxDescriptif, "Entrez un descriptif pour cette activité");
             this.richTextBoxDescriptif.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // textBoxNomLieu
@@ -190,6 +201,7 @@
             this.textBoxNomAct.Name = "textBoxNomAct";
             this.textBoxNomAct.Size = new System.Drawing.Size(100, 20);
             this.textBoxNomAct.TabIndex = 49;
+            this.toolTip1.SetToolTip(this.textBoxNomAct, "Renseigne le nom de l\'activité");
             this.textBoxNomAct.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // checkedListBoxAstronautes
@@ -199,6 +211,7 @@
             this.checkedListBoxAstronautes.Name = "checkedListBoxAstronautes";
             this.checkedListBoxAstronautes.Size = new System.Drawing.Size(233, 124);
             this.checkedListBoxAstronautes.TabIndex = 48;
+            this.toolTip1.SetToolTip(this.checkedListBoxAstronautes, "Sélectionnez les astronautes qui participent à l\'activité");
             this.checkedListBoxAstronautes.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxAstronautes_SelectedIndexChanged);
             // 
             // labelNomActivite
@@ -336,6 +349,7 @@
             this.checkBoxLieu.Size = new System.Drawing.Size(97, 17);
             this.checkBoxLieu.TabIndex = 70;
             this.checkBoxLieu.Text = "Ajouter un Lieu";
+            this.toolTip1.SetToolTip(this.checkBoxLieu, "Cliquez pour changer le lieu");
             this.checkBoxLieu.UseVisualStyleBackColor = true;
             this.checkBoxLieu.CheckedChanged += new System.EventHandler(this.checkBoxLieu_CheckedChanged);
             // 
@@ -346,6 +360,7 @@
             this.boutonAnnuler.Size = new System.Drawing.Size(123, 36);
             this.boutonAnnuler.TabIndex = 71;
             this.boutonAnnuler.Text = "Annuler";
+            this.toolTip1.SetToolTip(this.boutonAnnuler, "Cliquez pour annuler la modification");
             this.boutonAnnuler.UseVisualStyleBackColor = true;
             this.boutonAnnuler.Click += new System.EventHandler(this.boutonAnnuler_Click);
             // 
@@ -356,6 +371,7 @@
             this.buttonAjouterParCarte.Size = new System.Drawing.Size(100, 23);
             this.buttonAjouterParCarte.TabIndex = 72;
             this.buttonAjouterParCarte.Text = "Ajouter par carte";
+            this.toolTip1.SetToolTip(this.buttonAjouterParCarte, "Cliquez pour ajouter le lieu via la carte");
             this.buttonAjouterParCarte.UseVisualStyleBackColor = true;
             this.buttonAjouterParCarte.Visible = false;
             this.buttonAjouterParCarte.Click += new System.EventHandler(this.buttonAjouterParCarte_Click);
@@ -407,6 +423,7 @@
             this.Controls.Add(this.labelTitre);
             this.Name = "formModifierActivite";
             this.Text = "formModifierActivite";
+            this.toolTip1.SetToolTip(this, "Remplissez les champs que vous voulez modifier et enregistrez");
             this.Load += new System.EventHandler(this.formModifierActivite_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -446,6 +463,10 @@
         private System.Windows.Forms.CheckBox checkBoxLieu;
         private System.Windows.Forms.Button boutonAnnuler;
         private System.Windows.Forms.Button buttonAjouterParCarte;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBoxType;
+=======
+        private System.Windows.Forms.ToolTip toolTip1;
+>>>>>>> origin/master
     }
 }
