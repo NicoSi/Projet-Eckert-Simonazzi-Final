@@ -11,6 +11,7 @@ namespace WindowsFormsApplication1
 {
     public partial class formModifierActivite : Form
     {
+        //Attributs
         private Jour objetJour;
         private List<Astronautes> listeAstronautes;
         private Activités activiteAModifier;
@@ -18,7 +19,7 @@ namespace WindowsFormsApplication1
         private List<Jour> listeJour;
         private Planning planning;
 
-
+        //Constructeur
         public formModifierActivite(Jour objetJourSelection, List<Astronautes> tempListeAstronautes, Activités tempActiviteAModifier, List<Lieu> tempListeDeLieux,List<Jour> tempListeJours ,Planning P)
         {
             
@@ -31,7 +32,7 @@ namespace WindowsFormsApplication1
             planning = P;
         }
 
-       
+       //Suite d'opérations effectuées au chargement
         private void formModifierActivite_Load(object sender, EventArgs e)
         {
             textBoxNomAct.Text = this.activiteAModifier.GetnomActivite;
@@ -154,7 +155,6 @@ namespace WindowsFormsApplication1
 
             // On remplie le CheckListeBoxAstronaute avec la liste des astronautes
 
-          
             foreach (Astronautes A in listeAstronautes)
             {
                 checkedListBoxAstronautes.Items.Add(A.GetnomAstronaute);
@@ -192,31 +192,12 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void comboBoxHeureDebut_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxListeLieu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void checkedListBoxAstronautes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelPlageHoraireActivité_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // Recréer une activité avec les champs renseignés et renvoie des messages d'erreurs si tous les champs ne sont pas spécifiés par l'utilisateur
         private void boutonEnregistrerActivite_Click_1(object sender, EventArgs e)
         {
             string messageErreur = "Veuillez remplir les champs suivants :";
@@ -364,12 +345,12 @@ namespace WindowsFormsApplication1
             }
 
         }
-
+        //Ferme la fenêtre
         private void boutonAnnuler_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
-
+        //Rend visible les contrôles permettant d'ajouter un lieu au clic sur le CheckBoxLieu
         private void checkBoxLieu_CheckedChanged(object sender, EventArgs e)
         {
             textBoxCoordonnéesX.Visible = ((CheckBox)sender).Checked;
@@ -383,6 +364,7 @@ namespace WindowsFormsApplication1
             buttonAjouterParCarte.Visible = ((CheckBox)sender).Checked;
         }
 
+        //Affiche la carte eprmettant d'ajouter un lieu
         private void buttonAjouterParCarte_Click(object sender, EventArgs e)
         {
             nouveauLieuCarte form = new nouveauLieuCarte();
@@ -400,14 +382,12 @@ namespace WindowsFormsApplication1
                 buttonAjouterParCarte_Click(sender, e);
             }
         }
-<<<<<<< HEAD
-=======
+
 
         private void treeViewTypeActivite_AfterSelect(object sender, TreeViewEventArgs e)
         {
             textBoxType.Text = ((treeViewTypeActivite.SelectedNode.Parent == null) ? "" : treeViewTypeActivite.SelectedNode.Parent.Text + " - ") + treeViewTypeActivite.SelectedNode.Text;
         }//
->>>>>>> origin/master
 
       
 

@@ -1157,10 +1157,7 @@ namespace WindowsFormsApplication1
 
         }
 
-<<<<<<< HEAD
-   
-=======
-<<<<<<< HEAD
+
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Etes vous sur de vouloir quitter l'application ?", "Info", MessageBoxButtons.YesNo);
@@ -1169,9 +1166,8 @@ namespace WindowsFormsApplication1
                 enregistrerProjet();
                 this.Close();
             }
-=======
      
-
+        }
         private void toolTip1_Popup(object sender, PopupEventArgs e)
         {
             
@@ -1180,9 +1176,8 @@ namespace WindowsFormsApplication1
         private void button1_Click_3(object sender, EventArgs e)
         {
 
->>>>>>> origin/master
         }
->>>>>>> origin/master
+
     }
 }
 

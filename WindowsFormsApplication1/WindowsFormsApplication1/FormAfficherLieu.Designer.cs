@@ -117,12 +117,9 @@
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(98, 33);
             this.buttonOk.TabIndex = 9;
-<<<<<<< HEAD
             this.buttonOk.Text = "Retour";
-=======
             this.buttonOk.Text = "OK";
             this.toolTip1.SetToolTip(this.buttonOk, "Cliquer pour revenir à la fenêtre précédente");
->>>>>>> origin/master
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 

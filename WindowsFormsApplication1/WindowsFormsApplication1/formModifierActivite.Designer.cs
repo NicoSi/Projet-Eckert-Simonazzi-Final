@@ -38,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxMinuteDebut = new System.Windows.Forms.ComboBox();
             this.comboBoxHeureDebut = new System.Windows.Forms.ComboBox();
-            this.treeViewTypeActivite = new System.Windows.Forms.TreeView();
             this.boutonEnregistrerActivite = new System.Windows.Forms.Button();
             this.richTextBoxDescriptif = new System.Windows.Forms.RichTextBox();
             this.textBoxNomLieu = new System.Windows.Forms.TextBox();
@@ -60,11 +59,9 @@
             this.checkBoxLieu = new System.Windows.Forms.CheckBox();
             this.boutonAnnuler = new System.Windows.Forms.Button();
             this.buttonAjouterParCarte = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.textBoxType = new System.Windows.Forms.TextBox();
-=======
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
->>>>>>> origin/master
+            this.treeViewTypeActivite = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // textBoxCoordonnéesY
@@ -113,7 +110,6 @@
             this.comboBoxListeLieu.Name = "comboBoxListeLieu";
             this.comboBoxListeLieu.Size = new System.Drawing.Size(121, 21);
             this.comboBoxListeLieu.TabIndex = 60;
-            this.comboBoxListeLieu.SelectedIndexChanged += new System.EventHandler(this.comboBoxListeLieu_SelectedIndexChanged);
             // 
             // labelNomLieu
             // 
@@ -152,19 +148,6 @@
             this.comboBoxHeureDebut.Name = "comboBoxHeureDebut";
             this.comboBoxHeureDebut.Size = new System.Drawing.Size(71, 21);
             this.comboBoxHeureDebut.TabIndex = 55;
-            this.comboBoxHeureDebut.SelectedIndexChanged += new System.EventHandler(this.comboBoxHeureDebut_SelectedIndexChanged);
-            // 
-            // treeViewTypeActivite
-            // 
-            this.treeViewTypeActivite.Location = new System.Drawing.Point(101, 106);
-            this.treeViewTypeActivite.Name = "treeViewTypeActivite";
-            this.treeViewTypeActivite.Size = new System.Drawing.Size(271, 106);
-            this.treeViewTypeActivite.TabIndex = 54;
-<<<<<<< HEAD
-            this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
-=======
-            this.toolTip1.SetToolTip(this.treeViewTypeActivite, "Renseignez le type de l\'activité");
->>>>>>> origin/master
             // 
             // boutonEnregistrerActivite
             // 
@@ -212,7 +195,6 @@
             this.checkedListBoxAstronautes.Size = new System.Drawing.Size(233, 124);
             this.checkedListBoxAstronautes.TabIndex = 48;
             this.toolTip1.SetToolTip(this.checkedListBoxAstronautes, "Sélectionnez les astronautes qui participent à l\'activité");
-            this.checkedListBoxAstronautes.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxAstronautes_SelectedIndexChanged);
             // 
             // labelNomActivite
             // 
@@ -263,7 +245,6 @@
             this.labelPlageHoraireActivité.Size = new System.Drawing.Size(64, 20);
             this.labelPlageHoraireActivité.TabIndex = 43;
             this.labelPlageHoraireActivité.Text = "Début :";
-            this.labelPlageHoraireActivité.Click += new System.EventHandler(this.labelPlageHoraireActivité_Click);
             // 
             // labelJourActivité
             // 
@@ -384,6 +365,15 @@
             this.textBoxType.Size = new System.Drawing.Size(271, 20);
             this.textBoxType.TabIndex = 73;
             // 
+            // treeViewTypeActivite
+            // 
+            this.treeViewTypeActivite.Location = new System.Drawing.Point(101, 106);
+            this.treeViewTypeActivite.Name = "treeViewTypeActivite";
+            this.treeViewTypeActivite.Size = new System.Drawing.Size(271, 106);
+            this.treeViewTypeActivite.TabIndex = 54;
+            this.toolTip1.SetToolTip(this.treeViewTypeActivite, "Renseignez le type de l\'activité");
+            this.treeViewTypeActivite.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewTypeActivite_AfterSelect);
+            // 
             // formModifierActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -441,7 +431,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBoxMinuteDebut;
         private System.Windows.Forms.ComboBox comboBoxHeureDebut;
-        private System.Windows.Forms.TreeView treeViewTypeActivite;
         private System.Windows.Forms.Button boutonEnregistrerActivite;
         private System.Windows.Forms.RichTextBox richTextBoxDescriptif;
         private System.Windows.Forms.TextBox textBoxNomLieu;
@@ -463,10 +452,8 @@
         private System.Windows.Forms.CheckBox checkBoxLieu;
         private System.Windows.Forms.Button boutonAnnuler;
         private System.Windows.Forms.Button buttonAjouterParCarte;
-<<<<<<< HEAD
         private System.Windows.Forms.TextBox textBoxType;
-=======
         private System.Windows.Forms.ToolTip toolTip1;
->>>>>>> origin/master
+        private System.Windows.Forms.TreeView treeViewTypeActivite;
     }
 }

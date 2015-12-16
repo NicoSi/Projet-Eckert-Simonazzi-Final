@@ -21,7 +21,12 @@ public class Jour
 
 
     //Constructeur par défaut
+    public Jour()
+    {
+
+    }
  
+
     public Jour(List<Activités> tempListeActivite, string tempCompteRendu)
     {
         nbJour++;

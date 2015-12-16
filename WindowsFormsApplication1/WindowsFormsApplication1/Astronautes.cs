@@ -11,6 +11,7 @@ using System.Text;
 
 public class Astronautes
 {
+    //Attributs
     private int idAstronaute;
     private string nomAstronaute;
     private string prenomAstronaute;
@@ -26,14 +27,14 @@ public class Astronautes
         idAstronaute = nbAstronautes;
     }
 
-
+    //Accesseurs//
 	public string GetnomAstronaute
 	{
         get { return nomAstronaute; }
         set { nomAstronaute = value; }
 	}
 
-    //Accesseurs//
+    
 	public string GetprenomAstronaute
 	{
         get { return prenomAstronaute; }
@@ -51,6 +52,9 @@ public class Astronautes
         
     }
 	//FinAccesseurs
+
+    // Permet de comparer deux astronautes => utile dans le XML lorsqu'on sérialize les astronautes
+
     public override bool Equals(object obj)
     {
         Astronautes a = obj as Astronautes;
